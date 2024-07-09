@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/Pictures/BiggerLogo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAForge</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+
+  <script>
+   document.addEventListener('mousedown', e => {
+    // Create a new element and set its properties
+    const ripple = document.createElement('div');
+    ripple.style.border = '1px solid #ffffff';
+    ripple.style.borderRadius = '50%';
+    ripple.style.position = 'absolute';
+    ripple.style.pointerEvents = 'none';
+    ripple.style.width = '200px';
+    ripple.style.height = '200px';
+    ripple.style.left = (e.pageX - 100) + 'px'; // Subtract half of the ripple's size
+    ripple.style.top = (e.pageY - 100) + 'px'; // Subtract half of the ripple's size
+    ripple.style.transform = 'scale(0)'; // Start the ripple at 0 scale
+    ripple.style.zIndex = '120'
+    // Add the ripple to the body
+    document.body.appendChild(ripple);
+
+    // Animate the ripple
+    ripple.animate([
+        // Keyframes
+        { transform: 'scale(0)', opacity: '1' },
+        { transform: 'scale(0.7)', opacity: '0' }
+    ], {
+        // Timing options
+        duration: 500,
+        easing: 'ease-out'
+    }).onfinish = () => {
+        // Remove the ripple when the animation is done
+        ripple.remove();
+    };
+
+    // Change the cursor color to white
+    cursor.style.backgroundColor = '#ffffff';
+
+
+
+    
+});
+  </script>
+</html>

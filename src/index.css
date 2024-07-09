@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .miniGlow{
+      animation: miniGlow 1s ease-in-out infinite alternate;
+    }
+    @keyframes miniGlow {
+      0%{
+          text-shadow: 0 0 5px #82ffe0;
+      }
+      100%{
+          text-shadow: 0 0 15px #82ffe0;
+      }
+      
+    }
+    .textGlow{
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      
+      .biggerTextGlow {
+        animation: biggerGlow 1s ease-in-out infinite alternate;
+      }
+      @keyframes biggerGlow{
+        0%{
+            text-shadow: 0 0 10px #ffffffd4;
+        }
+        100%{
+            text-shadow: 0 0 30px #ffffffd4;
+        }
+      }
+    @keyframes glow{
+    0%{
+        text-shadow: 0 0 10px #ffffff71;
+    }
+    100%{
+        text-shadow: 0 0 30px #ffffff73;
+    }
+    }
+
+    .pulse {
+        
+        animation: pulse 10s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        
+        -webkit-filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(0px 0px 3px rgb(0, 220, 130));
+      }
+      50% {
+        -webkit-filter: drop-shadow(12px 12px 14px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(0px 0px 7px rgb(0, 220, 130));
+      }
+      100% {
+        -webkit-filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(0px 0px 3px rgb(0, 220, 130));
+      }
+    }
+
+    .Glow{
+      transition-duration: 0.2s;
+      box-shadow: rgba(0, 220, 130, 0.5) 0px 0px 10px 0px,
+          rgba(54, 228, 218, 0.5) 0px 0px 20px 0px;
+    }
+    .NoGlow{
+      transition-duration: 0.2s;
+      box-shadow: rgba(0, 220, 130, 0) 0px 0px 10px 0px,
+          rgba(54, 228, 218, 0) 0px 0px 20px 0px;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #191516; /* Change to match your site's color palette */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#162329, #13303B);
+    border-radius: 6px;
+}
+
+.boxShadow{
+  box-shadow: 0 0 20px rgba(0, 255, 149, 0.237);
+
+}
+
+.newsLetterHeight{
+  height: 100px;
+}
+
+.cursor{
+  border-width: 2px;
+  border-color: white;
+  z-index: 1000;
+}
+
+.cursor-white {
+  background-color: white;
+}
+
+html{
+  cursor:none;
+}
+
+.expand {
+  position: absolute;
+  width: 1;
+  height: 1;
+  border-radius: 50%;
+  background: rgba(0, 220, 130, 0);
+  border-color: white;
+  border-width: 1px;
+  transform: scale(1);
+  animation: ripple 0.3s linear;
+}
+
+@keyframes ripple {
+  to {
+      transform: scale(4);
+      opacity: 0;
+  }
+}
+
+.rain-text {
+  position: absolute;
+  top: -50px;
+  animation: rain linear infinite;
+}
+
+@keyframes rain {
+  to {
+      transform: translateY(100vh);
+  }
+}
