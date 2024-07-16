@@ -16,8 +16,10 @@ import Form from '../assets/Form';
 import SocialMedias from '../assets/SocialMedia';
 import Person from '../assets/Pictures/person.jpg';
 import Footer from  '../assets/Footer';
+import TextRain from '../assets/textRain';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
-
+import SecondSubtitle from '../assets/secondSubtitle';
+import Card from '../assets/Card';
 const Home = () => {
     const [count, setCount] = useState(0)
   const ref = useRef(null)
@@ -25,6 +27,7 @@ const Home = () => {
     console.log('scrolling');
     ref.current?.scrollIntoView({behavior: 'smooth'});
   }
+    const texts = ['Text 1', 'Text 2', 'Text 3', 'Text 4', 'Text 5'];
     return ( 
         <div className="bg-[#191516] h-[100vh] w-[100vw] overflow-x-hidden">
                     <Header />
@@ -36,7 +39,44 @@ const Home = () => {
                     
                     }/>
                     <SectionBreak />
+                    <section className="h-fit bg-gradient-to-br from-[#00dc82]  via-[#36e4da] to-[#16a79e] flex flex-col justify-center items-center">
+            
+                    <div className="bg-[#000000a3] h-full w-full">
 
+                
+                        <div id="content" className="relative h-full">
+                          <div className="absolute hidden md:block top-0 left-0 w-full h-full">
+                            <TextRain texts={texts} />
+                          </div>
+                          <div>
+                          <div className="relative flex flex-col justify-center items-center">
+                            <div className="m-20 p-10 pb-32 flex flex-col justify-center items-center">
+                                <div className="p-10 pb-0 text-center">
+                                <h1 className="text-white text-3xl md:text-6xl font-Poppins font-light tracking-[0.2em]">JOIN US FOR <span className="textGlow">WAFORGE REMOTE 2024</span></h1>
+                                </div>
+                                <div className="relative p-10 justify-center items-center text-center opacity-100 w-[95vw] md:w-[fit-content] h-[fit-content] bg-[#0c0c0d] top-[8vh] p-2vh rounded-[20px] ">
+                                    <div className="flex flex-col md:flex-row justify-center items-center">
+                                        <Card titleSize = "20px" title="What" extraStyles = "font-[600] text-[1.3em]" description = "Remote Hackathon"/>
+                                        <Card titleSize = "20px" title="When" extraStyles = "font-[600] text-[1.3em]" description = "August 10th - 17th"/>
+                                        <Card titleSize = "20px" title="Who" extraStyles = "font-[600] text-[1.3em]" description = "All students worldwide"/>
+                                    </div>
+                                    <div className="flex flex-col md:flex-col justify-center items-center">
+                                    <SecondSubtitle text="All participants must join the WAForge Discord" />
+
+                                    <Button link = "https://forms.gle/MSDrahLBgMYCvb6r6" text = "Register" paddingx = {" px-[10vw]"} paddingy = " py-[1rem]" extraStyle="mt-[5vh] text-[17px] font-bold mt-[1vh]"/>
+                                    <Button link = "https://discord.gg/vjq7Tm8THp" text = "Join us on Discord" paddingx = {" px-[8.2vw]"} paddingy = " py-[1rem]" extraStyle="mt-[5vh] text-[17px] font-bold mt-[20px] mb-[3vh]"/>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+                      </section>
+                    <SectionBreak />
                     <ServiceSection id="services" title="SERVICES" 
                       
                       element1={
