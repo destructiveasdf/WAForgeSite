@@ -99,7 +99,7 @@ const Home = () => {
                           
                           <div className="text-left md:w-[60%]">
                             <p className="text-white text-[1.5em] font-[200] font-Montserrat">
-                              Our goal is to offer a platform for young talent across America to connect and showcase their skills in an engaging environment.
+                              Arthur is a junior at Bellevue High School who enjoys coding, spending time with friends and family, and watching MMA or American Football. Arthur’s into hackathons and competes in a lot of them—they’re his favorite kind of coding competition.
                             </p>
                           </div>
                         </div>
