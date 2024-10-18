@@ -16,6 +16,7 @@ import Button from '../assets/Button';
 import Form from '../assets/Form';
 import SocialMedias from '../assets/SocialMedia';
 import Person from '../assets/Pictures/person.jpg';
+import Person1 from '../assets/Pictures/Profiles/ArthurProfile.png'
 import Footer from  '../assets/Footer';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
@@ -60,7 +61,76 @@ const Home = () => {
                       </div>
 
                     }/>
-                    </div>}/> 
+                    
+                    <ImageHorizontalCard title="ABOUT OUR TEAM" extraStyle = " h-[1550px] w-[90vw] md:h-[1500px] md:w-[1200px] pb-[4vh] pt-[4vh]" Element1 = {
+                      <div>
+                        <div className='flex flex-col md:flex-row justify-center items-center'>
+                          <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                            <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                            <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Rahul P.</h1>
+                            <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Founder</p>
+                          </div>
+                          
+                          <div className="text-left md:w-[60%]">
+                            <p className="text-white text-[1.5em] font-[200] font-Montserrat">
+                              Our goal is to offer a platform for young talent across America to connect and showcase their skills in an engaging environment.
+                            </p>
+                          </div>
+                        </div>
+                        <div className='flex flex-col md:flex-row justify-center items-center'>
+                          <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                            <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                            <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Siddarth T.</h1>
+                            <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Co-Founder</p>
+                          </div>
+                          
+                          <div className="text-left md:w-[60%]">
+                            <p className="text-white text-[1.5em] font-[200] font-Montserrat">
+                              Our goal is to offer a platform for young talent across America to connect and showcase their skills in an engaging environment.
+                            </p>
+                          </div>
+                        </div>
+                        <div className='flex flex-col md:flex-row justify-center items-center'>
+                          <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                            <img src={Person1} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                            <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Arthur Z.</h1>
+                            <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Technology Organizer</p>
+                          </div>
+                          
+                          <div className="text-left md:w-[60%]">
+                            <p className="text-white text-[1.5em] font-[200] font-Montserrat">
+                              Our goal is to offer a platform for young talent across America to connect and showcase their skills in an engaging environment.
+                            </p>
+                          </div>
+                        </div>
+                        <div className='flex flex-col md:flex-row justify-center items-center'>
+                          <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                            <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                            <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Arnav K.</h1>
+                            <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Outreach Manager</p>
+                          </div>
+                          
+                          <div className="text-left md:w-[60%]">
+                            <p className="text-white text-[1.5em] font-[200] font-Montserrat">
+                              Arnav is a junior at Interlake High School. When he isn't grinding IB, you can usually find him coding something or playing soccer with his friends. Other than that, he's probably learning something new.
+                            </p>
+                          </div>
+                        </div>
+                        <div className='flex flex-col md:flex-row justify-center items-center'>
+                          <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                            <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                            <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Nitin M.</h1>
+                            <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Marketing Manager</p>
+                          </div>
+                          
+                          <div className="text-left md:w-[60%]">
+                            <p className="text-white text-[1.5em] font-[200] font-Montserrat">
+                              Our goal is to offer a platform for young talent across America to connect and showcase their skills in an engaging environment.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    } /> </div>}/> 
 
                     <SectionBreak />
                     <section className="h-fit bg-gradient-to-br from-[#00dc82]  via-[#36e4da] to-[#16a79e] flex flex-col justify-center items-center">
@@ -73,7 +143,7 @@ const Home = () => {
                           </div>
                       </div>
                     </section>
-                    
+
                     <Footer />
               </div>
      );

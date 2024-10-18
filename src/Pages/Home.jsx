@@ -15,6 +15,7 @@ import Button from '../assets/Button';
 import Form from '../assets/Form';
 import SocialMedias from '../assets/SocialMedia';
 import Person from '../assets/Pictures/person.jpg';
+import Person1 from '../assets/Pictures/Profiles/ArthurProfile.png'
 import Footer from  '../assets/Footer';
 import TextRain from '../assets/textRain';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
@@ -111,7 +112,7 @@ const Home = () => {
                             <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Co-Founder</p>
                           </div>
                           <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
-                            <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                            <img src={Person1} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
                             <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Arthur Z.</h1>
                             <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Technology Organizer</p>
                           </div>
