@@ -9,12 +9,14 @@ import {
 } from "react-router-dom";
 import About from './Pages/About.jsx'
 import Sponsor from './Pages/Sponsor.jsx'
+import PastEvents from './Pages/PastEvents.jsx'
 
 const router = createBrowserRouter([
 
   {path: "/", element: <App />},
   {path: "/About", element: <About />},
-  {path: "/Sponsor", element: <Sponsor />}
+  {path: "/Sponsor", element: <Sponsor />},
+  {path: "/PastEvents", element: <PastEvents />}
 
 ]);
 

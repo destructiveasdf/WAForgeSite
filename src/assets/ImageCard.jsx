@@ -10,7 +10,8 @@ const ImageHorizontalCard = (plugin) => {
     var paraStyle;
     var paragraphSytle = "text-white font-Montserrat font-[200] mt-3 textGlow " + extraDescriptionStyles + paraStyle;
     var interiorDivStyle = "flex flex-col justify-center items-center w-full md:w-["+String(thing)+"] ml-0 md:ml-10 mr-0 md:mr-10";
-    var cardStyle = "mt-[5vh] rounded-[10px] p-2 flex-row pt-[15px] pb-[20px] inline-block text-center relative overflow-hidden transition-[0.1s] boxShadow" + extraStyle;
+    var cardStyle = `mt-[5vh] rounded-[10px] p-2 flex-row pt-[15px] pb-[20px] inline-block text-center relative overflow-hidden transition-[0.1s] boxShadow ${extraStyle} 
+                     before:content-[''] before:absolute before:inset-0 before:-z-10 before:rounded-[10px] before:bg-gradient-to-r before:from-[#00ffc8] before:to-transparent before:blur-[15px]`;
     return ( 
         <div className={cardStyle}>
             <div className="relative rounded-[12px] top-[3px] bottom-[3px] h-full w-full overflow-hidden flex flex-col md:flex-row justify-center align-center">

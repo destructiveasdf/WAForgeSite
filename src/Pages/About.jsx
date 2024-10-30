@@ -62,7 +62,7 @@ const Home = () => {
 
                     }/>
                     
-                    <ImageHorizontalCard title="ABOUT OUR TEAM" extraStyle = " h-[1550px] w-[90vw] md:h-[1500px] md:w-[1200px] pb-[4vh] pt-[4vh]" Element1 = {
+                    <ImageHorizontalCard title="ABOUT OUR TEAM" extraStyle = " h-[2700px] w-[90vw] md:h-[1500px] md:w-[1200px] pb-[4vh] pt-[4vh]" Element1 = {
                       <div>
                         <div className='flex flex-col md:flex-row justify-center items-center'>
                           <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>

@@ -40,6 +40,7 @@ const Home = () => {
                     
                     }/>
                     <SectionBreak />
+
                     <section className="h-fit bg-gradient-to-br from-[#00dc82]  via-[#36e4da] to-[#16a79e] flex flex-col justify-center items-center">
             
                     <div className="bg-[#000000a3] h-full w-full">
@@ -50,21 +51,21 @@ const Home = () => {
                             <TextRain texts={texts} />
                           </div>
                           <div>
-                          <div className="relative flex flex-col justify-center items-center">
+                          <div ref={ref} className="relative flex flex-col justify-center items-center">
                             <div className="m-20 p-10 pb-32 flex flex-col justify-center items-center">
                                 <div className="p-10 pb-0 text-center">
-                                <h1 className="text-white text-3xl md:text-6xl font-Poppins font-light tracking-[0.2em]">JOIN US FOR <span className="textGlow">WAFORGE REMOTE 2024</span></h1>
+                                <h1 className="text-white text-3xl md:text-6xl font-Poppins font-light tracking-[0.2em]">JOIN US FOR <span className="textGlow">WAFORGE COMPETITIONS</span></h1>
                                 </div>
                                 <div className="relative p-10 justify-center items-center text-center opacity-100 w-[95vw] md:w-[fit-content] h-[fit-content] bg-[#0c0c0d] top-[8vh] p-2vh rounded-[20px] ">
                                     <div className="flex flex-col md:flex-row justify-center items-center">
-                                        <Card titleSize = "20px" title="What" extraStyles = "font-[600] text-[1.3em]" description = "Remote Hackathon"/>
-                                        <Card titleSize = "20px" title="When" extraStyles = "font-[600] text-[1.3em]" description = "August 10th - 17th"/>
-                                        <Card titleSize = "20px" title="Who" extraStyles = "font-[600] text-[1.3em]" description = "All students worldwide"/>
+                                        <Card titleSize = "20px" title="What" extraStyles = "font-[600] text-[1.3em]" description = "A series of competitions and challenges"/>
+                                        <Card titleSize = "20px" title="When" extraStyles = "font-[600] text-[1.3em]" description = "TBD - We will contact you with any updates"/>
+                                        <Card titleSize = "20px" title="Who" extraStyles = "font-[600] text-[1.3em]" description = "Students from all backgrounds and expierences"/>
                                     </div>
                                     <div className="flex flex-col md:flex-col justify-center items-center">
-                                    <SecondSubtitle text="All participants must join the WAForge Discord" />
+                                    <SecondSubtitle text="Participants may be featured on our social media (with credit). Join the fun!" />
 
-                                    <Button link = "https://forms.gle/MSDrahLBgMYCvb6r6" text = "Register" paddingx = {" px-[10vw]"} paddingy = " py-[1rem]" extraStyle="mt-[5vh] text-[17px] font-bold mt-[1vh]"/>
+                                    <Button link = "https://forms.gle/Phq3hwY7d2wV6dmUA" text = "Register" paddingx = {" px-[10vw]"} paddingy = " py-[1rem]" extraStyle="mt-[5vh] text-[17px] font-bold mt-[1vh]"/>
                                     <Button link = "https://discord.gg/vjq7Tm8THp" text = "Join us on Discord" paddingx = {" px-[8.2vw]"} paddingy = " py-[1rem]" extraStyle="mt-[5vh] text-[17px] font-bold mt-[20px] mb-[3vh]"/>
                                     </div>
                                     
@@ -78,21 +79,19 @@ const Home = () => {
                       </div>
                       </section>
                     <SectionBreak />
+
                     <ServiceSection id="services" title="SERVICES" 
                       
                       element1={
-                        <div ref={ref} className='flex flex-col justify-center items-center'>
+                        <div className='flex flex-col justify-center items-center'>
                           <ImageHorizontalCard subTitle={<CardSubtitle />} extraStyle = " h-[600px] w-[90vw] md:h-[350px] md:w-[1200px]" Element1 = {<Button isOpenDiv={true} text = "Sign Up" paddingx = {" px-[2.5rem]"} paddingy = " py-[0.35rem]" extraStyle="mt-[3vh] font-[500]"/>} image = {hackathon} title="HACKATHON" description="WAForge offers annual hackathons for students to showcase their skills and learn from industry professionals. These hackathons offer grand cash prizes and the opportunity to network with tech enthusiasts." />
                           <ImageHorizontalCard extraStyle=" h-[600px] w-[90vw] md:h-[370px] md:w-[1200px]" subTitle={<CardSubtitle />} Element1={<Form paddingx="px-10" paddingy="py-2"/>} title="NEWSLETTER" description="Join our newsletter to stay up to date with the latest news and events in tech and business. Our newsletter also offers exclusive content and updates on upcoming events and activities at WAForge." />
                           <ImageHorizontalCard title="COMING SOON" extraStyle = " h-[600px] w-[90vw] md:h-[370px] md:w-[1200px]" description="Follow us on our social media to stay updated on everything WAForge!" Element2={<Button link = "https://hcb.hackclub.com/donations/start/waforge" text = "Support WAForge" paddingx = {" px-[4rem]"} paddingy = " py-[0.5rem]" extraStyle="mt-[0vh]"/>} Element1={<SocialMedias />} />
 
                         </div>
 
-                    }
-                      
-                      />
-                    <SectionBreak />
-                    <HackathonSection id="hackathons"/>
+                    }/>
+
                     <SectionBreak />
                     <ServiceSection id="services" title="OUR TEAM" element1={<div className="flex flex-col justify-center items-center">
                     
@@ -128,12 +127,9 @@ const Home = () => {
                             <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Nitin M.</h1>
                             <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Marketing Manager</p>
                           </div>
-
-                        
                         </div>
 
                         <Button isOpenDiv={false} link="/About" text = "Learn More" paddingx = {" px-[3rem]"} paddingy = " py-[0.7rem]" extraStyle="mt-[5vh] font-[500]"/>
-
                       </div>
                     } /> </div>}/> 
                     
