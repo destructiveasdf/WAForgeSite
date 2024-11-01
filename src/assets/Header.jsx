@@ -16,6 +16,7 @@ const Header = () => {
                         <HeaderLink link="/About" text="About" />
                         <HeaderLink link="/Sponsor" text="Sponsors" />
                         <HeaderLink link="/PastEvents" text="Past Events" />
+                        <HeaderLink link="/Competitions" text="Competitions" />
                     </div>
                 </div>
                 <SectionBreak />

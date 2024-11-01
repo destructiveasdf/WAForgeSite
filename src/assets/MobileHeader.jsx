@@ -21,10 +21,13 @@ const MobileHeader = () => {
                 </button>
             </div>
 
-            <div className={`bg-black text-white flex flex-col items-start transition-all duration-1000 ease-in-out ${isDropdownOpen ? 'h-[85px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-                <HeaderLink link="/About" text="About" />
-                <HeaderLink link="/Sponsor" text="Sponsors" />
-                <HeaderLink link="/PastEvents" text="Past Events" />
+            <div className={`transition-all duration-700 ease-in-out ${isDropdownOpen ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+                <div className="bg-black text-white flex flex-col items-start px-0 pb-4">
+                    <HeaderLink link="/About" text="About" />
+                    <HeaderLink link="/Sponsor" text="Sponsors" />
+                    <HeaderLink link="/PastEvents" text="Past Events" />
+                    <HeaderLink link="/Competitions" text="Competitions" />
+                </div>
             </div>
         </header>
     );

@@ -41,49 +41,11 @@ const Home = () => {
                     }/>
                     <SectionBreak />
 
-                    <section className="h-fit bg-gradient-to-br from-[#00dc82]  via-[#36e4da] to-[#16a79e] flex flex-col justify-center items-center">
-            
-                    <div className="bg-[#000000a3] h-full w-full">
-
-                
-                        <div id="content" className="relative h-full">
-                          <div className="absolute hidden md:block top-0 left-0 w-full h-full">
-                            <TextRain texts={texts} />
-                          </div>
-                          <div>
-                          <div ref={ref} className="relative flex flex-col justify-center items-center">
-                            <div className="m-20 p-10 pb-32 flex flex-col justify-center items-center">
-                                <div className="p-10 pb-0 text-center">
-                                <h1 className="text-white text-3xl md:text-6xl font-Poppins font-light tracking-[0.2em]">JOIN US FOR <span className="textGlow">WAFORGE COMPETITIONS</span></h1>
-                                </div>
-                                <div className="relative p-10 justify-center items-center text-center opacity-100 w-[95vw] md:w-[fit-content] h-[fit-content] bg-[#0c0c0d] top-[8vh] p-2vh rounded-[20px] ">
-                                    <div className="flex flex-col md:flex-row justify-center items-center">
-                                        <Card titleSize = "20px" title="What" extraStyles = "font-[600] text-[1.3em]" description = "A series of competitions and challenges"/>
-                                        <Card titleSize = "20px" title="When" extraStyles = "font-[600] text-[1.3em]" description = "TBD - We will contact you with any updates"/>
-                                        <Card titleSize = "20px" title="Who" extraStyles = "font-[600] text-[1.3em]" description = "Students from all backgrounds and expierences"/>
-                                    </div>
-                                    <div className="flex flex-col md:flex-col justify-center items-center">
-                                    <SecondSubtitle text="Participants may be featured on our social media (with credit). Join the fun!" />
-
-                                    <Button link = "https://forms.gle/Phq3hwY7d2wV6dmUA" text = "Register" paddingx = {" px-[10vw]"} paddingy = " py-[1rem]" extraStyle="mt-[5vh] text-[17px] font-bold mt-[1vh]"/>
-                                    <Button link = "https://discord.gg/vjq7Tm8THp" text = "Join us on Discord" paddingx = {" px-[8.2vw]"} paddingy = " py-[1rem]" extraStyle="mt-[5vh] text-[17px] font-bold mt-[20px] mb-[3vh]"/>
-                                    </div>
-                                    
-                                </div>
-                                
-                            </div>
-
-                        </div>
-                          </div>
-                        </div>
-                      </div>
-                      </section>
-                    <SectionBreak />
-
                     <ServiceSection id="services" title="SERVICES" 
                       
                       element1={
-                        <div className='flex flex-col justify-center items-center'>
+                        <div ref={ref} className='flex flex-col justify-center items-center'>
+                          <ImageHorizontalCard extraStyle="h-[600px] w-[90vw] md:h-[350px] md:w-[1200px]" subTitle={<CardSubtitle />} Element1={<Button link="/Competitions" text="Learn More" paddingx="px-[2.5rem]" paddingy="py-[0.35rem]" extraStyle="mt-[3vh] font-[500]" />} title="COMPETITIONS" description="WAForge is now hosting exciting competitions to test your skills and give you the chance to compete with other tech enthusiasts! Join now to showcase your talent."/>
                           <ImageHorizontalCard subTitle={<CardSubtitle />} extraStyle = " h-[600px] w-[90vw] md:h-[350px] md:w-[1200px]" Element1 = {<Button isOpenDiv={true} text = "Sign Up" paddingx = {" px-[2.5rem]"} paddingy = " py-[0.35rem]" extraStyle="mt-[3vh] font-[500]"/>} image = {hackathon} title="HACKATHON" description="WAForge offers annual hackathons for students to showcase their skills and learn from industry professionals. These hackathons offer grand cash prizes and the opportunity to network with tech enthusiasts." />
                           <ImageHorizontalCard extraStyle=" h-[600px] w-[90vw] md:h-[370px] md:w-[1200px]" subTitle={<CardSubtitle />} Element1={<Form paddingx="px-10" paddingy="py-2"/>} title="NEWSLETTER" description="Join our newsletter to stay up to date with the latest news and events in tech and business. Our newsletter also offers exclusive content and updates on upcoming events and activities at WAForge." />
                           <ImageHorizontalCard title="COMING SOON" extraStyle = " h-[600px] w-[90vw] md:h-[370px] md:w-[1200px]" description="Follow us on our social media to stay updated on everything WAForge!" Element2={<Button link = "https://hcb.hackclub.com/donations/start/waforge" text = "Support WAForge" paddingx = {" px-[4rem]"} paddingy = " py-[0.5rem]" extraStyle="mt-[0vh]"/>} Element1={<SocialMedias />} />

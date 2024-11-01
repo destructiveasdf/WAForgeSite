@@ -10,13 +10,15 @@ import {
 import About from './Pages/About.jsx'
 import Sponsor from './Pages/Sponsor.jsx'
 import PastEvents from './Pages/PastEvents.jsx'
+import Competitions from './Pages/Competitions.jsx'
 
 const router = createBrowserRouter([
 
   {path: "/", element: <App />},
   {path: "/About", element: <About />},
   {path: "/Sponsor", element: <Sponsor />},
-  {path: "/PastEvents", element: <PastEvents />}
+  {path: "/PastEvents", element: <PastEvents />},
+  {path: "/Competitions", element: <Competitions />}
 
 ]);
 
