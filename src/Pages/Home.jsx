@@ -41,12 +41,44 @@ const Home = () => {
                     }/>
                     <SectionBreak />
 
+                    <ServiceSection id="hackathon" title="WAFORGE HACKATHON 2025" 
+                      element1={
+                        <div ref={ref} className='flex flex-col justify-center items-center'>
+                          <ImageHorizontalCard 
+                            extraStyle=" h-[800px] w-[90vw] md:h-[600px] md:w-[1200px]"
+                            subTitle={<CardSubtitle />}
+                            Element1={
+                              <div className='flex flex-col items-center'>
+                                <p className="text-white text-[1em] font-[200] font-Montserrat mb-4">
+                                  Join us on <span className="font-bold">February 15th-16th</span> for an exciting hackathon experience! Location is TBA.
+                                </p>
+                                <p className="text-white text-[1em] font-[200] font-Montserrat mb-4">
+                                  For questions of more information, contact us at: contact@waforge.org
+                                </p>
+                                <Button 
+                                  link="https://docs.google.com/forms/d/e/1FAIpQLSf2Hofe7JR7sT6QmXUEz0Suw70GDFzAxeM3JvtHH8eE5_ma7w/viewform?usp=sf_link" 
+                                  text="Sign Up" 
+                                  paddingx=" px-[2.5rem]" 
+                                  paddingy=" py-[0.35rem]" 
+                                  extraStyle="mt-[3vh] font-[500]"
+                                />
+                              </div>
+                            }
+                            image={hackathon}
+                            title="WAFORGE HACKATHON 2025"
+                            description="Showcase your skills, collaborate with peers, and create innovative solutions at our annual hackathon. Grand prizes and networking opportunities await!"
+                          />
+                        </div>
+                      }
+                    />
+
+                    <SectionBreak />
+
                     <ServiceSection id="services" title="SERVICES" 
                       
                       element1={
-                        <div ref={ref} className='flex flex-col justify-center items-center'>
+                        <div className='flex flex-col justify-center items-center'>
                           <ImageHorizontalCard extraStyle="h-[600px] w-[90vw] md:h-[350px] md:w-[1200px]" subTitle={<CardSubtitle />} Element1={<Button link="/Competitions" text="Learn More" paddingx="px-[2.5rem]" paddingy="py-[0.35rem]" extraStyle="mt-[3vh] font-[500]" />} title="COMPETITIONS" description="WAForge is now hosting exciting competitions to test your skills and give you the chance to compete with other tech enthusiasts! Join now to showcase your talent."/>
-                          <ImageHorizontalCard subTitle={<CardSubtitle />} extraStyle = " h-[600px] w-[90vw] md:h-[350px] md:w-[1200px]" Element1 = {<Button isOpenDiv={true} text = "Sign Up" paddingx = {" px-[2.5rem]"} paddingy = " py-[0.35rem]" extraStyle="mt-[3vh] font-[500]"/>} image = {hackathon} title="HACKATHON" description="WAForge offers annual hackathons for students to showcase their skills and learn from industry professionals. These hackathons offer grand cash prizes and the opportunity to network with tech enthusiasts." />
                           <ImageHorizontalCard extraStyle=" h-[600px] w-[90vw] md:h-[370px] md:w-[1200px]" subTitle={<CardSubtitle />} Element1={<Form paddingx="px-10" paddingy="py-2"/>} title="NEWSLETTER" description="Join our newsletter to stay up to date with the latest news and events in tech and business. Our newsletter also offers exclusive content and updates on upcoming events and activities at WAForge." />
                           <ImageHorizontalCard title="COMING SOON" extraStyle = " h-[600px] w-[90vw] md:h-[370px] md:w-[1200px]" description="Follow us on our social media to stay updated on everything WAForge!" Element2={<Button link = "https://hcb.hackclub.com/donations/start/waforge" text = "Support WAForge" paddingx = {" px-[4rem]"} paddingy = " py-[0.5rem]" extraStyle="mt-[0vh]"/>} Element1={<SocialMedias />} />
 

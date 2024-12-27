@@ -14,7 +14,7 @@ const ImageHorizontalCard = (plugin) => {
                      before:content-[''] before:absolute before:inset-0 before:-z-10 before:rounded-[10px] before:bg-gradient-to-r before:from-[#00ffc8] before:to-transparent before:blur-[15px]`;
     return ( 
         <div className={cardStyle}>
-            <div className="relative rounded-[12px] top-[3px] bottom-[3px] h-full w-full overflow-hidden flex flex-col md:flex-row justify-center align-center">
+            <div className="relative rounded-[12px] top-[3px] bottom-[3px] h-full w-full overflow-hidden flex flex-col md:flex-row items-center">
                 
                 <img src={image} className={imageStyle}></img>
                 <div className={interiorDivStyle}>
