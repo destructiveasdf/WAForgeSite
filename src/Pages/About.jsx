@@ -17,7 +17,11 @@ import Form from '../assets/Form';
 import SocialMedias from '../assets/SocialMedia';
 import Person from '../assets/Pictures/person.jpg';
 import Person1 from '../assets/Pictures/Profiles/ArthurProfile.png'
+import Person2 from '../assets/Pictures/Profiles/SiddarthProfile.png'
+import Person3 from '../assets/Pictures/Profiles/ArnavProfile.png'
+import Person4 from '../assets/Pictures/Profiles/RahulProfile.png'
 import Footer from  '../assets/Footer';
+import Banner from '../assets/banner';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 const Home = () => {
@@ -31,6 +35,7 @@ const Home = () => {
     return ( 
         <div className="bg-[#191516] h-[100vh] w-[100vw] overflow-x-hidden">
                     <Header />
+                    <Banner />
                     
                     <VideoSection videos = {[loopVideo]} isHero = {false} element={<h1 className="z-10 text-white font-Poppins font-[200] tracking-[0.2em] text-[2em] md:text-[4em] mb-[1vh]">WELCOME TO <span className='biggerTextGlow'>WAFORGE</span></h1>} />
                     <SectionBreak />
@@ -44,7 +49,7 @@ const Home = () => {
                       </div>
                     }
                     />
-                    <ImageHorizontalCard title="VALUES" extraStyle = " h-[1000px] w-[90vw] md:h-[350px] md:w-[1200px]" Element1={
+                    <ImageHorizontalCard title="VALUES" extraStyle = " h-[600px] w-[90vw] md:h-[350px] md:w-[1200px]" Element1={
                       <div className='flex flex-col md:flex-row justify-center items-center'>
                         <div className='w-[90%] md:w-[30%] m-4'>
                           <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0" >IMPACT</h1>
@@ -62,31 +67,31 @@ const Home = () => {
 
                     }/>
                     
-                    <ImageHorizontalCard title="ABOUT OUR TEAM" extraStyle = " h-[2700px] w-[90vw] md:h-[1500px] md:w-[1200px] pb-[4vh] pt-[4vh]" Element1 = {
+                    <ImageHorizontalCard title="ABOUT OUR TEAM" extraStyle = " h-[3400px] w-[90vw] md:h-[1800px] md:w-[1200px] pb-[4vh] pt-[4vh]" Element1 = {
                       <div>
                         <div className='flex flex-col md:flex-row justify-center items-center'>
                           <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
-                            <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                            <img src={Person4} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
                             <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Rahul P.</h1>
                             <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Founder</p>
                           </div>
                           
                           <div className="text-left md:w-[60%]">
                             <p className="text-white text-[1.5em] font-[200] font-Montserrat">
-                              Our goal is to offer a platform for young talent across America to connect and showcase their skills in an engaging environment.
+                              Rahul is a junior at Interlake High School. Other than grinding for IB, he enjoys game development, working out, and wrestling.
                             </p>
                           </div>
                         </div>
                         <div className='flex flex-col md:flex-row justify-center items-center'>
                           <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
-                            <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                            <img src={Person2} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
                             <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Siddarth T.</h1>
                             <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Co-Founder</p>
                           </div>
                           
                           <div className="text-left md:w-[60%]">
                             <p className="text-white text-[1.5em] font-[200] font-Montserrat">
-                              Our goal is to offer a platform for young talent across America to connect and showcase their skills in an engaging environment.
+                              Siddarth is a junior at Interlake High School who spends his time going outside with his dog, playing board games with his family, playing video games, and watching anime. You may also find him in the kitchen, whipping up his next eye-watering monstrosity of a dish.
                             </p>
                           </div>
                         </div>
@@ -105,7 +110,7 @@ const Home = () => {
                         </div>
                         <div className='flex flex-col md:flex-row justify-center items-center'>
                           <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
-                            <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                            <img src={Person3} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
                             <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Arnav K.</h1>
                             <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Outreach Manager</p>
                           </div>
@@ -125,7 +130,20 @@ const Home = () => {
                           
                           <div className="text-left md:w-[60%]">
                             <p className="text-white text-[1.5em] font-[200] font-Montserrat">
-                              Our goal is to offer a platform for young talent across America to connect and showcase their skills in an engaging environment.
+                              Nitin, a sophomore at Interlake High School, is passionate about business and entrepreneurship. He enjoys participating in hackathons, where he combines his business skills with technology to develop innovative solutions.
+                            </p>
+                          </div>
+                        </div>
+                        <div className='flex flex-col md:flex-row justify-center items-center'>
+                          <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                            <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                            <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Evan G.</h1>
+                            <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Hackathon Manager</p>
+                          </div>
+                          
+                          <div className="text-left md:w-[60%]">
+                            <p className="text-white text-[1.5em] font-[200] font-Montserrat">
+                              Evan is a student at the Universtiy of Washington. He enjoys hackathons and values the opportunity to build friendships and strong connections with new people.
                             </p>
                           </div>
                         </div>

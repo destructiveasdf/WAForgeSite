@@ -23,6 +23,7 @@ import geogebra from '../assets/Pictures/Geogebra.png';
 import nasaa from '../assets/Pictures/NASAA.png';
 import SSD from '../assets/Pictures/SSD.png';
 import Digipen from '../assets/Pictures/Digipen.png';
+import Banner from '../assets/banner';
 
 const Sponsor = () => {
     const [count, setCount] = useState(0)
@@ -35,6 +36,7 @@ const Sponsor = () => {
     return ( 
         <div className="bg-[#191516] h-[100vh] w-[100vw] overflow-x-hidden">
                     <Header />
+                    <Banner />
                     
                     <VideoSection videos = {[loopVideo]} isHero = {false} element={<div><h1 className="z-10 text-white font-Poppins font-[200] tracking-[0.2em] text-[2em] md:text-[4em] mb-[1vh]">SUPPORT <span className='biggerTextGlow'>WAFORGE</span></h1> <Button link = "https://hcb.hackclub.com/donations/start/waforge" text = "Support WAForge" paddingx = {" px-[4rem]"} paddingy = " py-[0.75rem]" extraStyle="mt-[3vh]"/></div>} />
                     <SectionBreak />

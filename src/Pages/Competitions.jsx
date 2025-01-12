@@ -12,6 +12,7 @@ import TextRain from '../assets/textRain'
 import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll'
 import SecondSubtitle from '../assets/secondSubtitle'
 import Card from '../assets/Card'
+import Banner from '../assets/banner';
 
 const WAForgeCompetitions = () => {
     const [count, setCount] = useState(0)
@@ -25,6 +26,7 @@ const WAForgeCompetitions = () => {
     return (
         <div className="bg-[#191516] h-[100vh] w-[100vw] overflow-x-hidden">
             <Header />
+            <Banner />
 
             <section className="h-fit bg-gradient-to-br from-[#00dc82] via-[#36e4da] to-[#16a79e] flex flex-col justify-center items-center">
                 <div className="bg-[#000000a3] h-full w-full">
