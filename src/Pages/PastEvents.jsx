@@ -14,7 +14,7 @@ import geogebra from '../assets/Pictures/Geogebra.png';
 import nasaa from '../assets/Pictures/NASAA.png';
 import SSD from '../assets/Pictures/SSD.png';
 import Digipen from '../assets/Pictures/Digipen.png';
-import Banner from '../assets/banner';
+import Banner from '../assets/Banner';
 
 const PastEvents = () => {
     const [count, setCount] = useState(0)

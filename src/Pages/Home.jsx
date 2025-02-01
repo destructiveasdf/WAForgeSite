@@ -19,12 +19,13 @@ import Person1 from '../assets/Pictures/Profiles/ArthurProfile.png'
 import Person2 from '../assets/Pictures/Profiles/SiddarthProfile.png'
 import Person3 from '../assets/Pictures/Profiles/ArnavProfile.png'
 import Person4 from '../assets/Pictures/Profiles/RahulProfile.png'
+import Person5 from '../assets/Pictures/Profiles/MadhavProfile.png'
 import Footer from  '../assets/Footer';
 import TextRain from '../assets/textRain';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import SecondSubtitle from '../assets/secondSubtitle';
 import Card from '../assets/Card';
-import Banner from '../assets/banner';
+import Banner from '../assets/Banner';
 const Home = () => {
     const [count, setCount] = useState(0)
   const ref = useRef(null)
@@ -95,7 +96,7 @@ const Home = () => {
                     <ServiceSection id="services" title="OUR TEAM" element1={<div className="flex flex-col justify-center items-center">
                     
                     
-                    <ImageHorizontalCard title="" extraStyle = " h-[1750px] w-[90vw] md:h-[800px] md:w-[1200px] pb-[4vh] pt-[4vh]" Element1 = {
+                    <ImageHorizontalCard title="" extraStyle = " h-[2050px] w-[90vw] md:h-[1000px] md:w-[1200px] pb-[4vh] pt-[4vh]" Element1 = {
                       
                       <div>
                         <div className='flex flex-col md:flex-row justify-center items-center mt-5'>
@@ -130,6 +131,13 @@ const Home = () => {
                             <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
                             <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Evan G.</h1>
                             <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Hackathon Manager</p>
+                          </div>
+                        </div>
+                        <div className='flex flex-col md:flex-row justify-center items-center'>
+                          <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                            <img src={Person5} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                            <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Madhav D.</h1>
+                            <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Content and Communication Manager</p>
                           </div>
                         </div>
 

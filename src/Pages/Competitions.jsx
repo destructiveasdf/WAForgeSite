@@ -12,7 +12,7 @@ import TextRain from '../assets/textRain'
 import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll'
 import SecondSubtitle from '../assets/secondSubtitle'
 import Card from '../assets/Card'
-import Banner from '../assets/banner';
+import Banner from '../assets/Banner';
 
 const WAForgeCompetitions = () => {
     const [count, setCount] = useState(0)

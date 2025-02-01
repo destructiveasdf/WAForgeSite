@@ -49,11 +49,64 @@ const Hackathon = () => {
         console.log('scrolling');
         ref.current?.scrollIntoView({ behavior: 'smooth' });
     }
+    
+    const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
+
+    useEffect(() => {
+      const countDownDate = new Date("Feb 15, 2025 00:00:00").getTime()
+      const timer = setInterval(() => {
+        const now = new Date().getTime()
+        const distance = countDownDate - now
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24))
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000)
+        setTimeLeft({ days, hours, minutes, seconds })
+        if (distance < 0) {
+          clearInterval(timer)
+          setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 })
+        }
+      }, 1000)
+      return () => clearInterval(timer)
+    }, [])
 
     return ( 
         <div className="bg-[#191516] h-[100vh] w-[100vw] overflow-x-hidden">
             <Header />
-            <VideoSection videos={[loopVideo]} isHero={false} element={<h1 className="z-10 text-white font-Poppins font-[200] tracking-[0.2em] text-[2em] md:text-[4em] mb-[1vh]"> <span className='biggerTextGlow'>WAFORGE 2025</span></h1>} />
+            <VideoSection
+                videos={[loopVideo]}
+                isHero={false}
+                element={
+                <div className="z-10 text-white font-Poppins flex flex-col items-center">
+                    <h1 className="font-[200] tracking-[0.2em] text-[2em] md:text-[4em] mb-[1vh]">
+                    <span className="biggerTextGlow">WAFORGE 2025</span>
+                    </h1>
+                    <div className="mt-8 text-[1.5em] md:text-[2.5em] font-[200] tracking-[0.2em]">
+                        <p className="biggerTextGlow">COUNTDOWN TO HACKATHON:</p>
+                    </div>
+                    <div className="mt-8 text-2xl md:text-3xl">
+                    <div className="flex justify-center space-x-6 md:space-x-10">
+                        <div className="text-center">
+                        <span className="text-4xl md:text-6xl font-bold">{timeLeft.days}</span>
+                        <p className="text-sm md:text-lg mt-2">Days</p>
+                        </div>
+                        <div className="text-center">
+                        <span className="text-4xl md:text-6xl font-bold">{timeLeft.hours}</span>
+                        <p className="text-sm md:text-lg mt-2">Hours</p>
+                        </div>
+                        <div className="text-center">
+                        <span className="text-4xl md:text-6xl font-bold">{timeLeft.minutes}</span>
+                        <p className="text-sm md:text-lg mt-2">Minutes</p>
+                        </div>
+                        <div className="text-center">
+                        <span className="text-4xl md:text-6xl font-bold">{timeLeft.seconds}</span>
+                        <p className="text-sm md:text-lg mt-2">Seconds</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                }
+            />
             <SectionBreak />
             <section className="h-fit bg-gradient-to-br from-[#00dc82] via-[#36e4da] to-[#16a79e] flex flex-col justify-center items-center">
                 <div className="bg-[#000000a3] h-full w-full">

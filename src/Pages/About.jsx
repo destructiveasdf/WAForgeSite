@@ -20,8 +20,9 @@ import Person1 from '../assets/Pictures/Profiles/ArthurProfile.png'
 import Person2 from '../assets/Pictures/Profiles/SiddarthProfile.png'
 import Person3 from '../assets/Pictures/Profiles/ArnavProfile.png'
 import Person4 from '../assets/Pictures/Profiles/RahulProfile.png'
+import Person5 from '../assets/Pictures/Profiles/MadhavProfile.png'
 import Footer from  '../assets/Footer';
-import Banner from '../assets/banner';
+import Banner from '../assets/Banner';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 const Home = () => {
@@ -40,11 +41,11 @@ const Home = () => {
                     <VideoSection videos = {[loopVideo]} isHero = {false} element={<h1 className="z-10 text-white font-Poppins font-[200] tracking-[0.2em] text-[2em] md:text-[4em] mb-[1vh]">WELCOME TO <span className='biggerTextGlow'>WAFORGE</span></h1>} />
                     <SectionBreak />
                     <ServiceSection id="services" title="ABOUT" element1={<div className="flex flex-col justify-center items-center">
-                    <ImageHorizontalCard extraStyle = " h-[600px] w-[90vw] md:h-[450px] md:w-[1200px]" title="MISSION" description="WAForge was created to give young developers an opportunity to make meaningful connections, drive innovation, and to learn" extraDescriptionStyles="text-[1.5em] " Element1={
+                    <ImageHorizontalCard extraStyle = " h-[600px] w-[90vw] md:h-[450px] md:w-[1200px]" title="MISSION" description="Empowering young developers to make meaningful connections, drive innovation, and grow through learning" extraDescriptionStyles="text-[1.5em] " Element1={
                       <div className="mt-10">
 
                         <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.5em] md:text-[2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0" >VISION</h1>
-                        <p className="text-white text-[1.5em] font-[200] font-Montserrat">Our goal is to offer a platform for young talent across America to connect and showcase their skills in an engaging environment.</p>
+                        <p className="text-white text-[1.5em] font-[200] font-Montserrat">To be the leading platform for young talent across America to connect, collaborate, and develop their skills.</p>
                               
                       </div>
                     }
@@ -53,21 +54,21 @@ const Home = () => {
                       <div className='flex flex-col md:flex-row justify-center items-center'>
                         <div className='w-[90%] md:w-[30%] m-4'>
                           <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0" >IMPACT</h1>
-                          <p className="text-white text-[1em] font-[200] font-Montserrat">We here at WAForge strive to make an impact in the world and give opportunities to those who are willing to take advantage of it</p>
+                          <p className="text-white text-[1em] font-[200] font-Montserrat">We strive to facilitate change and provide opportunities to those willing to make a difference.</p>
                         </div>
                         <div className='w-[90%] md:w-[30%] m-4'>
                           <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0" >IDEAS FIRST</h1>
-                          <p className="text-white text-[1em] font-[200] font-Montserrat">We value ideas greatly here at WAForge. We believe everything starts with a great idea, and we try to foster that in our community.</p>
+                          <p className="text-white text-[1em] font-[200] font-Montserrat">We support bold ideas, prioritizing creativity and growth over conventional thinking.</p>
                         </div>
                         <div className='w-[90%] md:w-[30%] m-4'>
                           <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0" >COMMUNITY</h1>
-                          <p className="text-white text-[1em] font-[200] font-Montserrat">WAForge was created to foster a community of tech enthusiasts who are passionate about making a difference in the world.</p>
+                          <p className="text-white text-[1em] font-[200] font-Montserrat">We foster a community of tech enthusiasts dedicated to changing the world.</p>
                         </div>
                       </div>
 
                     }/>
                     
-                    <ImageHorizontalCard title="ABOUT OUR TEAM" extraStyle = " h-[3400px] w-[90vw] md:h-[1800px] md:w-[1200px] pb-[4vh] pt-[4vh]" Element1 = {
+                    <ImageHorizontalCard title="ABOUT OUR TEAM" extraStyle = " h-[3900px] w-[90vw] md:h-[2000px] md:w-[1200px] pb-[4vh] pt-[4vh]" Element1 = {
                       <div>
                         <div className='flex flex-col md:flex-row justify-center items-center'>
                           <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
@@ -144,6 +145,19 @@ const Home = () => {
                           <div className="text-left md:w-[60%]">
                             <p className="text-white text-[1.5em] font-[200] font-Montserrat">
                               Evan is a student at the Universtiy of Washington. He enjoys hackathons and values the opportunity to build friendships and strong connections with new people.
+                            </p>
+                          </div>
+                        </div>
+                        <div className='flex flex-col md:flex-row justify-center items-center'>
+                          <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                            <img src={Person5} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                            <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Madhav D.</h1>
+                            <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Content and Communication Manager</p>
+                          </div>
+                          
+                          <div className="text-left md:w-[60%]">
+                            <p className="text-white text-[1.5em] font-[200] font-Montserrat">
+                            Madhav is a sophomore at Interlake High School who enjoys competitive math, coding, and writing.  He enjoys game development because it combines technical skills with creative storytelling.
                             </p>
                           </div>
                         </div>
