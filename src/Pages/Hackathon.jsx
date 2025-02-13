@@ -17,6 +17,7 @@ import Digipen from '../assets/Pictures/Digipen.png';
 import SecondSubtitle from '../assets/secondSubtitle'
 import Card from '../assets/Card'
 import Button from '../assets/Button'
+import Schedule from '../assets/Schedule';
 
 const Hackathon = () => {
     const [count, setCount] = useState(0)
@@ -108,30 +109,41 @@ const Hackathon = () => {
                 }
             />
             <SectionBreak />
-            <section className="h-fit bg-gradient-to-br from-[#00dc82] via-[#36e4da] to-[#16a79e] flex flex-col justify-center items-center">
-                <div className="bg-[#000000a3] h-full w-full">
-                    <div id="content" className="relative h-full">
-                        <div>
-                            <div ref={ref} className="relative flex flex-col justify-center items-center">
-                                <div className="m-20 p-10 pb-32 flex flex-col justify-center items-center">
-                                    <div className="relative p-10 justify-center items-center text-center opacity-100 w-[95vw] md:w-[fit-content] h-[fit-content] bg-[#0c0c0d] top-[0vh] p-2vh rounded-[20px] ">
-                                        <div className="flex flex-col md:flex-row justify-center items-center">
-                                            <Card titleSize="20px" title="What/When" extraStyles="font-[600] text-[1.3em]" description="A hackathon is a fun, high-energy event where people create cool tech projects together! It will be held February 15th-16th."/>
-                                            <Card titleSize="20px" title="Where" extraStyles="font-[600] text-[1.3em]" description="TBD - We will confirm the venue soon, join the discord to stay updated!"/>
-                                            <Card titleSize="20px" title="Eligibility" extraStyles="font-[600] text-[1.3em]" description="Open to all students in grades 6-12"/>
-                                        </div>
-                                        <div className="flex flex-col md:flex-col justify-center items-center">
-                                            <SecondSubtitle text="Join us for an exciting hackathon to showcase your skills!" />
-                                            <Button link="https://forms.gle/aAUqE1MaGJaeZKjF9" text="Register Now" paddingx=" px-[10vw]" paddingy=" py-[1rem]" extraStyle="mt-[5vh] text-[17px] font-bold mt-[1vh]"/>
-                                            <Button link="https://discord.gg/vjq7Tm8THp" text="Join Discord Community" paddingx=" px-[8.2vw]" paddingy=" py-[1rem]" extraStyle="mt-[5vh] text-[17px] font-bold mt-[20px] mb-[3vh]"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <section className="bg-[#191516] flex justify-center items-center pt-12 pb-4">
+                <div className="bg-black/60 w-full max-w-3xl mx-4 rounded-lg p-4">
+                    <div className="text-center text-white">
+                    <h2 className="text-2xl font-bold mb-6">Information</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-3">
+                        <div className="bg-white/10 p-3 rounded-lg">
+                        <div className="flex items-center justify-center gap-2 mb-1">
+                            <span className="text-xl">📅</span>
+                            <h3 className="font-semibold text-sm">Feb 15-16</h3>
+                        </div>
+                        <p className="text-xs opacity-90">24-hour tech creation event</p>
+                        </div>
+                        <div className="bg-white/10 p-3 rounded-lg">
+                        <div className="flex items-center justify-center gap-2 mb-1">
+                            <span className="text-xl">📍</span>
+                            <h3 className="font-semibold text-sm">DigiPen</h3>
+                        </div>
+                        <p className="text-xs opacity-90">9931 Willows Rd NE, Redmond, WA 98052</p>
+                        </div>
+                        <div className="bg-white/10 p-3 rounded-lg">
+                        <div className="flex items-center justify-center gap-2 mb-1">
+                            <span className="text-xl">🎓</span>
+                            <h3 className="font-semibold text-sm">Grades 6-12</h3>
+                        </div>
+                        <p className="text-xs opacity-90">All students welcome</p>
                         </div>
                     </div>
+                    <div className="flex flex-col sm:flex-row justify-center gap-3">
+                        <a href="https://forms.gle/aAUqE1MaGJaeZKjF9" className="bg-white text-[#191516] px-4 py-1.5 rounded-full text-sm font-bold hover:bg-gray-100 transition"> Register Now </a>
+                        <a href="https://discord.gg/vjq7Tm8THp" className="border border-white px-4 py-1.5 rounded-full text-sm font-medium hover:bg-white/10 transition"> Join Discord </a>
+                    </div>
+                    </div>
                 </div>
-            </section>                
+            </section>
+            <Schedule />
             <Footer />
         </div>
     );
