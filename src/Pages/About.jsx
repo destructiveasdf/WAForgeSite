@@ -65,10 +65,9 @@ const Home = () => {
                 <p className="text-white text-[1em] font-[200] font-Montserrat">We foster a community of tech enthusiasts dedicated to changing the world.</p>
               </div>
             </div>
-
           }/>
           
-          <ImageHorizontalCard title="ABOUT OUR TEAM" extraStyle = " h-[3900px] w-[90vw] md:h-[2000px] md:w-[1200px] pb-[4vh] pt-[4vh]" Element1 = {
+          <ImageHorizontalCard title="ABOUT OUR TEAM" extraStyle="w-[90vw] md:w-[1200px] py-8" Element1 = {
             <div>
               <div className='flex flex-col md:flex-row justify-center items-center'>
                 <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
@@ -149,10 +148,10 @@ const Home = () => {
                 </div>
               </div>
               <div className='flex flex-col md:flex-row justify-center items-center'>
-                <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                <div className='w-[90%] md:w-fit m-4 mx-4 flex flex-col justify-center items-center'>
                   <img src={Person5} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
                   <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Madhav D.</h1>
-                  <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Content and Communication Manager</p>
+                  <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Content & Communication Manager</p>
                 </div>
                 
                 <div className="text-left md:w-[60%]">
@@ -165,17 +164,6 @@ const Home = () => {
           } /> </div>}/> 
 
           <SectionBreak />
-          <section className="h-fit bg-gradient-to-br from-[#00dc82]  via-[#36e4da] to-[#16a79e] flex flex-col justify-center items-center">
-            <div className="bg-[#000000a3] h-full w-full">
-                <div className="relative flex flex-col justify-center items-center">
-                    
-                    
-
-                    
-                </div>
-            </div>
-          </section>
-
           <Footer />
         </div>
      );

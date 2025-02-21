@@ -11,7 +11,7 @@ const MobileHeader = () => {
     };
     return (
         <header className="bg-black w-full block md:hidden fixed top-0 left-0 z-50">
-            <div className="flex justify-between items-center h-[10vh] px-4">
+            <div className="flex justify-between items-center h-14 px-4">
                 <MobileHeaderLogo />
 
                 <button className="text-white focus:outline-none focus:ring-0 relative" onClick={toggleDropdown}>
