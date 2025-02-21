@@ -28,9 +28,9 @@ export default function CatalystPage() {
   useEffect(() => {
     const timer = setTimeout(() => {
       if (scrollContainerRef.current) {
-        scrollContainerRef.current.scrollBy({ left: 100, behavior: 'smooth' });
+        scrollContainerRef.current.scrollBy({ left: 1000, behavior: 'smooth' });
         setTimeout(() => {
-          scrollContainerRef.current?.scrollBy({ left: -100, behavior: 'smooth' });
+          scrollContainerRef.current?.scrollBy({ left: -1000, behavior: 'smooth' });
         }, 700);
       }
     }, 1000);
