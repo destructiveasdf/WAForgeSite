@@ -97,7 +97,7 @@
   height: 100px;
 }
 
-.cursor{
+/* .cursor{
   border-width: 2px;
   border-color: white;
   z-index: 1000;
@@ -105,9 +105,9 @@
 
 .cursor-white {
   background-color: white;
-}
+} */
 
-html{
+/* html{
   cursor:none;
 }
 
@@ -121,7 +121,7 @@ html{
   border-width: 1px;
   transform: scale(1);
   animation: ripple 0.3s linear;
-}
+} */
 
 @keyframes ripple {
   to {

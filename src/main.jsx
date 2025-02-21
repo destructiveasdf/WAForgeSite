@@ -10,8 +10,7 @@ import {
 import About from './Pages/About.jsx'
 import Sponsor from './Pages/Sponsor.jsx'
 import PastEvents from './Pages/PastEvents.jsx'
-import Competitions from './Pages/Competitions.jsx'
-import Hackathon from './Pages/Hackathon.jsx'
+import Catalyst from './Pages/Catalyst.jsx'
 
 const router = createBrowserRouter([
 
@@ -19,14 +18,13 @@ const router = createBrowserRouter([
   {path: "/About", element: <About />},
   {path: "/Sponsor", element: <Sponsor />},
   {path: "/PastEvents", element: <PastEvents />},
-  {path: "/Competitions", element: <Competitions />},
-  {path: "/Hackathon", element: <Hackathon />}
+  {path: "/Catalyst", element: <Catalyst />},
 
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-    <Cursor />
+    {/* <Cursor /> */}
   </React.StrictMode>
 )

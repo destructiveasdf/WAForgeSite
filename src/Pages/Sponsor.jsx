@@ -23,6 +23,7 @@ import geogebra from '../assets/Pictures/Geogebra.png';
 import nasaa from '../assets/Pictures/NASAA.png';
 import SSD from '../assets/Pictures/SSD.png';
 import Digipen from '../assets/Pictures/Digipen.png';
+import Ryzlink from '../assets/Pictures/Ryzlink.png';
 import Banner from '../assets/Banner';
 
 const Sponsor = () => {
@@ -40,28 +41,28 @@ const Sponsor = () => {
                     
                     <VideoSection videos = {[loopVideo]} isHero = {false} element={<div><h1 className="z-10 text-white font-Poppins font-[200] tracking-[0.2em] text-[2em] md:text-[4em] mb-[1vh]">SUPPORT <span className='biggerTextGlow'>WAFORGE</span></h1> <Button link = "https://hcb.hackclub.com/donations/start/waforge" text = "Support WAForge" paddingx = {" px-[4rem]"} paddingy = " py-[0.75rem]" extraStyle="mt-[3vh]"/></div>} />
                     <SectionBreak />
-                   
-
-                    <SectionBreak />
                     <section className="h-fit bg-gradient-to-br from-[#00dc82]  via-[#36e4da] to-[#16a79e] flex flex-col justify-center items-center">
                       <div className="bg-[#000000a3] h-full w-full">
                           <div className="relative flex flex-col justify-center items-center">
-                            <h1 className="text-white text-3xl md:text-6xl font-Poppins font-light tracking-[0.2em] mt-20">SPONSORS</h1>
+                            <h1 className="text-white text-3xl md:text-6xl font-Poppins font-light tracking-[0.2em] mt-20">WAFORGE 2025 SPONSORS</h1>
+                                <div className="m-20 p-10 pb-32 flex flex-col justify-center items-center bg-black rounded-xl">
+                                    <div className="p-10 pb-0 text-center flex flex-row justify-center items-center">
+                                      <img src={Digipen} className="w-[50vw] md:w-[20vw] m-0 md:m-5 ml-0 md:mx-[3.5em] mt-5 rounded-[10px]"></img>
+                                      <img src={Ryzlink} className="w-[50vw] md:w-[20vw] m-0 md:m-5 ml-0 md:mx-[3.5em] mt-5 rounded-[10px]"></img> 
+                                    </div>
+                                </div>
+                            <h1 className="text-white text-3xl md:text-6xl font-Poppins font-light tracking-[0.2em] mt-20">WAFORGE 2024 SPONSORS</h1>
                               <div className="m-20 p-10 pb-32 flex flex-col justify-center items-center bg-black rounded-xl">
                                   <div className="p-10 pb-0 text-center flex flex-row justify-center items-center">
                                     <img src={echo3d} className="w-[50vw] md:w-[20vw] m-0 md:m-5 ml-0 md:mx-[3.5em] mt-5 rounded-[10px]"></img>
                                     <img src={nasaa} className="w-[50vw] md:w-[20vw] m-0 md:m-5 mr-0 md:mx-[3.5em] mt-5 rounded-[10px]"></img>
                                     <img src={SSD} className="w-[50vw] md:w-[20vw] m-0 md:m-5 ml-0 md:mx-[3.5em] mt-5 rounded-[10px]"></img>
-                                    
                                   </div>
                                   <div className="p-10 pb-0 text-center flex flex-row justify-center items-center mt-10">
                                     <img src={Digipen} className="w-[50vw] md:w-[20vw] m-0 md:m-5 ml-0 md:mx-[3.5em] mt-5 rounded-[10px]"></img>
                                     <img src={geogebra} className="w-[50vw] md:w-[20vw] m-0 md:m-5 mr-0 md:mx-[3.5em] mt-5 rounded-[10px]"></img>
-                                    
                                   </div>
                               </div>
-
-                              
                           </div>
                       </div>
                     </section>

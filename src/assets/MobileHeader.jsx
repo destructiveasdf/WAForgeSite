@@ -26,7 +26,7 @@ const MobileHeader = () => {
                     <HeaderLink link="/About" text="About" />
                     <HeaderLink link="/Sponsor" text="Sponsors" />
                     <HeaderLink link="/PastEvents" text="Past Events" />
-                    <HeaderLink link="/Competitions" text="Competitions" />
+                    <HeaderLink link="/Catalyst" text="Catalyst" />
                 </div>
             </div>
         </header>
