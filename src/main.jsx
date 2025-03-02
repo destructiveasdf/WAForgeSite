@@ -11,6 +11,7 @@ import About from './Pages/About.jsx'
 import Sponsor from './Pages/Sponsor.jsx'
 import PastEvents from './Pages/PastEvents.jsx'
 import Catalyst from './Pages/Catalyst.jsx'
+import Volunteer from './Pages/Volunteer.jsx'
 
 const router = createBrowserRouter([
 
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
   {path: "/Sponsor", element: <Sponsor />},
   {path: "/PastEvents", element: <PastEvents />},
   {path: "/Catalyst", element: <Catalyst />},
+  {path: "/Volunteer", element: <Volunteer />}
 
 ]);
 
