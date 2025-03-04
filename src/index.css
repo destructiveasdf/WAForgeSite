@@ -19,7 +19,7 @@
       
     }
     .textGlow{
-        animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 4s ease-in-out infinite alternate;
       }
       
       .biggerTextGlow {
@@ -44,22 +44,22 @@
 
     .pulse {
         
-        animation: pulse 10s infinite;
+        animation: pulse 4s infinite;
     }
 
     @keyframes pulse {
       0% {
         
-        -webkit-filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.5));
-        filter: drop-shadow(0px 0px 3px rgb(0, 220, 130));
+        -webkit-filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(0px 0px 1px rgb(0, 220, 130));
       }
       50% {
-        -webkit-filter: drop-shadow(12px 12px 14px rgba(0, 0, 0, 0.5));
-        filter: drop-shadow(0px 0px 7px rgb(0, 220, 130));
+        -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(0px 0px 3px rgb(0, 220, 130));
       }
       100% {
-        -webkit-filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.5));
-        filter: drop-shadow(0px 0px 3px rgb(0, 220, 130));
+        -webkit-filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(0px 0px 1px rgb(0, 220, 130));
       }
     }
 

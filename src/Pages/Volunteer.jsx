@@ -19,10 +19,10 @@ const Volunteer = () => {
     <div className="bg-[#191516] min-h-[100vh] w-full overflow-x-hidden">
       <Header />
       <Banner />
-      <div className="flex flex-col justify-center items-center bg-black pt-16 pb-12 w-full">
+      <div className="flex flex-col justify-center items-center bg-black pt-24 pb-24 w-full">
         <div className="bg-black p-4 md:p-8 h-auto w-[95%] md:w-[90%] max-w-[1500px]">
           <div className="flex flex-col items-center text-center w-full">
-            <h1 className="text-white font-Montserrat font-[700] tracking-[0.1em] md:tracking-[0.2em] text-[1.6em] md:text-[2.5em] mb-2 textGlow px-4 mx-auto max-w-[95%] md:max-w-full">VOLUNTEER OPPORTUNITIES</h1>
+            <h1 className="text-white font-Poppins font-[700] tracking-[0.1em] md:tracking-[0.2em] text-[1.6em] md:text-[3em] mb-2 textGlow px-4 mx-auto max-w-[95%] md:max-w-full">INTERNSHIPS</h1>
             <p className="text-white font-Montserrat font-[300] tracking-[0.2em] text-[1em] mb-8 px-2">JOIN OUR MISSION, SUPPORT OUR CAUSE</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 w-full mb-0 -ml-16 md:ml-0 px-2 md:px-0 md:pr-14">
               <Card titleSize="20px" title="EARN HOURS" extraStyles="font-[600] text-[1.3em]" ExtraDivStyles="!bg-black hover:scale-100 h-auto min-h-[150px] w-full px-4" description="Get volunteer hours for school, college applications, or personal growth" />
@@ -40,7 +40,7 @@ const Volunteer = () => {
       <SectionBreak />
 
       <div ref={positionsRef} className="flex flex-col justify-center items-center bg-black w-full">
-        <h1 className="text-white font-Montserrat font-[700] tracking-[0.2em] text-[2em] md:text-[2em] my-8 px-4 text-center">OPEN POSITIONS</h1>
+        <h1 className="text-white font-Montserrat font-[700] tracking-[0.2em] text-[2em] md:text-[3em] my-8 px-4 text-center">OPEN POSITIONS</h1>
         <div className="w-[80%] h-[2px] bg-gradient-to-r from-transparent via-[#00ffc8] to-transparent mb-8"></div>
         <div className="bg-black p-4 md:p-8 w-[95%] md:w-[90%] max-w-[1200px] mb-8">
           <div className="flex flex-col items-center text-center w-full">

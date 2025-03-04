@@ -44,16 +44,18 @@ const Home = () => {
         
         <VideoSection shouldChange={true} videos = {[video1, video2, video3, video4]} isHero = {true} element={
         
-        <button onClick={() => doSomething()} className='relative inline-flex items-center justify-center p-0.5 mt-10 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-[12.5px] group bg-gradient-to-br from-[#00dc82] via-[#36e4da] to-[#16a79e] group-hover:from-green-400 duration-[0.1s] hover:shadow-[0_0px_15px_0px_rgba(0,255,130,1)] dark:text-white '><span className='font-Montserrat font-light relative transition-all ease-in duration-75 bg-white dark:bg-[#18181b] rounded-[9.5px] px-10 py-2'>Get Started</span></button>
+        <button onClick={() => doSomething()} className='relative inline-flex items-center justify-center p-0.5 mt-10 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-[12.5px] group bg-gradient-to-br from-[#00dc82] via-[#36e4da] to-[#16a79e] group-hover:from-green-400 duration-[0.1s] hover:shadow-[0_0px_15px_0px_rgba(0,255,130,1)] dark:text-white '><span className='font-Montserrat font-light relative transition-all ease-in duration-75 bg-white dark:bg-[#18181b] rounded-[9.5px] px-10 py-2'>Join Us</span></button>
         }/>
         <SectionBreak />
 
         <div className='flex flex-col justify-center items-center bg-black pb-20'>
           <ImageHorizontalCard extraStyle="h-[1400px] w-[90vw] md:h-[1000px] md:w-[1400px]" title="" Element1={
             <div ref={ref} className='flex flex-col items-center text-center w-full'>
-              <p className="text-gray-400 text-sm tracking-widest mb-0 ml-1">INTRODUCING</p>
-              <img src={WaforgeCatalyst} alt="WAForge Logo" className="w-108 h-58 mb-6"/>
-              <p className="text-white text-2xl mb-16">TURNING POTENTIAL INTO PROGRESS</p>
+              <p className="text-gray-400 text-md tracking-widest mb-0 ml-1 font-Poppins tracking-[0.5em] textGlow">INTRODUCING</p>
+              <img src={Logo} alt="WAForge Logo" className="w-[50px] h-[50px] md:w-[75px] md:h-[75px] pulse mt-10 md:mt-16"/>
+              <p className="text-white text-[2em] mb-0 font-Poppins font-[800] md:text-[4em] tracking-[0.2em] textGlow mt-2">WAFORGE</p>
+              <p className="text-white text-[1.5em] md:text-[3em] mt-0 mb-7 md:mb-16 font-Poppins font-[200] tracking-[0.2em] textGlow">CATALYST</p>
+              <p className="text-white text-[1em] mb-16 font-Montserrat tracking-[0.3em]">TURNING POTENTIAL INTO PROGRESS</p>
               
               <div className="max-w-3xl mx-auto mb-0">
                 <p className="text-gray-300 text-lg font-Montserrat mb-6">
@@ -73,16 +75,17 @@ const Home = () => {
         </div>
         <SectionBreak />
         <div className='flex flex-col justify-center items-center bg-black pb-20'>
-          <ImageHorizontalCard extraStyle="h-[750px] w-[90vw] md:h-[600px] md:w-[1400px]" title="" Element1={
-            <div ref={ref} className='flex flex-col items-center text-center w-full'>
-              <h1 className="text-white font-Montserrat font-[700] tracking-[0.1em] md:tracking-[0.2em] text-[1.6em] md:text-[2.5em] mb-2 textGlow px-4 md:px-2 mx-auto max-w-[95%] md:max-w-full">VOLUNTEER OPPORTUNITIES</h1>
+          <ImageHorizontalCard extraStyle="h-[750px] w-[90vw] md:h-[800px] md:w-[1400px]" title="" Element1={
+            <div ref={ref} className='flex flex-col items-center text-center w-full pb-20'>
+              <img src={Logo} alt="WAForge Logo" className="w-[50px] h-[50px] md:w-[75px] md:h-[75px] pulse mt-10 md:mt-24"/>
+              <h1 className="text-white font-Poppins font-[700] tracking-[0.1em] md:tracking-[0.2em] text-[1.6em] md:text-[2.5em] mb-2 mt-2 textGlow px-4 md:px-2 mx-auto max-w-[95%] md:max-w-full">INTERNSHIPS</h1>
               <p className="text-white font-Montserrat font-[300] tracking-[0.2em] text-[1em] mb-8 px-2">JOIN OUR MISSION, SUPPORT OUR CAUSE</p>
               <p className="text-white font-Montserrat font-[300] text-[1.2em] max-w-3xl mx-auto mb-8 px-4">
               Whether you're a developer, designer, leader, or manager WAForge has a place for you! This is an opportunity to gather real-world work experience while gaining volunteer hours!
               </p>
               <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                 <Card titleSize="20px" title="WANT THE DETAILS?" extraStyles="font-[600] text-[1.3em]" ExtraDivStyles="!bg-black hover:scale-100"
-                  description={<Button link="/Volunteer" text="LEARN MORE" paddingx=" px-[2.5rem]" paddingy=" py-[0.35rem]" extraStyle="mt-[2vh] font-[500]"/>}/>
+                  description={<Button link="/Internship" text="LEARN MORE" paddingx=" px-[2.5rem]" paddingy=" py-[0.35rem]" extraStyle="mt-[2vh] font-[500]"/>}/>
                 </div>
             </div>
           }/>

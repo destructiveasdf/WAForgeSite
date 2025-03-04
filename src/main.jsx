@@ -20,7 +20,7 @@ const router = createBrowserRouter([
   {path: "/Sponsor", element: <Sponsor />},
   {path: "/PastEvents", element: <PastEvents />},
   {path: "/Catalyst", element: <Catalyst />},
-  {path: "/Volunteer", element: <Volunteer />}
+  {path: "/Internship", element: <Volunteer />}
 
 ]);
 
