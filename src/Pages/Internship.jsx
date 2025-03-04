@@ -7,7 +7,7 @@ import Card from '../assets/Card';
 import Banner from '../assets/Banner';
 import Footer from '../assets/Footer';
 
-const Volunteer = () => {
+const Internship = () => {
   const positionsRef = useRef(null)
   
   const scrollToPositions = () => {
@@ -100,4 +100,4 @@ const Volunteer = () => {
   )
 }
 
-export default Volunteer
+export default Internship
