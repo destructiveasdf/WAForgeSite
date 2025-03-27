@@ -29,6 +29,7 @@ import SecondSubtitle from '../assets/secondSubtitle';
 import Card from '../assets/Card';
 import Banner from '../assets/Banner';
 import WaforgeCatalyst from '../assets/Pictures/waforgecatalyst.png'
+import WaforgeStuImpact from '../assets/Pictures/WAFORGEwithSTUIMPACT.png'
 const Home = () => {
     const [count, setCount] = useState(0)
   const ref = useRef(null)
@@ -51,9 +52,9 @@ const Home = () => {
         <div className='flex flex-col justify-center items-center bg-black pb-20'>
           <ImageHorizontalCard extraStyle="h-[1400px] w-[90vw] md:h-[1000px] md:w-[1400px]" title="" Element1={
             <div ref={ref} className='flex flex-col items-center text-center w-full'>
-              <p className="text-gray-400 text-md tracking-widest mb-0 ml-1 font-Poppins tracking-[0.5em] textGlow">INTRODUCING</p>
-              <img src={Logo} alt="WAForge Logo" className="w-[50px] h-[50px] md:w-[75px] md:h-[75px] pulse mt-10 md:mt-16"/>
-              <p className="text-white text-[2em] mb-0 font-Poppins font-[800] md:text-[4em] tracking-[0.2em] textGlow mt-2">WAFORGE</p>
+              <img src={WaforgeStuImpact} alt="WAForge Logo" className="w-[400px] h-[60px] md:w-[675px] md:h-[105px] ml-5"/>
+              <p className="text-gray-400 text-md tracking-widest mb-0 ml-0 font-Poppins tracking-[0.5em] textGlow">INTRODUCING</p>
+              <p className="text-white text-[2em] mb-0 font-Poppins font-[800] md:text-[4em] tracking-[0.2em] textGlow mt-2"></p>
               <p className="text-white text-[1.5em] md:text-[3em] mt-0 mb-7 md:mb-16 font-Poppins font-[200] tracking-[0.2em] textGlow">CATALYST</p>
               <p className="text-white text-[1em] mb-16 font-Montserrat tracking-[0.3em]">TURNING POTENTIAL INTO PROGRESS</p>
               

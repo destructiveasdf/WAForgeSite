@@ -4,6 +4,7 @@ import Header from '../assets/Header'
 import Footer from '../assets/Footer'
 import Banner from '../assets/Banner'
 import SectionBreak from '../assets/SectionBreak'
+import WaforgeStuImpact from '../assets/Pictures/WAFORGEwithSTUIMPACT.png'
 
 export default function CatalystPage() {
   const scrollContainerRef = useRef(null);
@@ -83,7 +84,8 @@ export default function CatalystPage() {
         <div className="container mx-auto px-4 space-y-10 xl:space-y-16">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
-              <h1 className="text-5xl font-bold tracking-tighter text-white sm:text-6xl/none">WAFORGE CATALYST</h1>
+              <img src={WaforgeStuImpact} alt="Logo" className="mx-auto w-[400px] h-[60px] md:w-[675px] md:h-[105px]" />
+              <h1 className="text-5xl font-bold tracking-tighter text-white sm:text-6xl/none">CATALYST</h1>
               <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl tracking-[0.2em]">
                 TURNING POTENTIAL INTO PROGRESS
               </p>
