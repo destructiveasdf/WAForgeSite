@@ -1,7 +1,7 @@
-import SocialMedias from "./SocialMedia";
-import discord from './Pictures/discord.svg';
-import instagram from './Pictures/instagram.svg';
-import linkedin from './Pictures/linkedin.svg';
+import SocialMedias from "./SocialMedia"
+import discord from './Pictures/discord.svg'
+import instagram from './Pictures/instagram.svg'
+import linkedin from './Pictures/linkedin.svg'
 
 const Footer = () => {
     var socials = "flex justify-center align-center h-fit w-fit m-[10px] rounded-[50%] p-0";

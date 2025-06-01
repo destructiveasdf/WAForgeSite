@@ -1,11 +1,11 @@
-import React from 'react';
-import ImageHorizontalCard from "./ImageCard";
-import hackathon from "./Pictures/hackathon.png";
-import SectionTitle from './SectionTitle';
-import SocialMedias from './SocialMedia';
-import Button from './Button';
-import CardSubtitle from './cardSubtitle';
-import Form from './Form';
+import React from 'react'
+import ImageHorizontalCard from "./ImageCard"
+import hackathon from "./Pictures/hackathon.png"
+import SectionTitle from './SectionTitle'
+import SocialMedias from './SocialMedia'
+import Button from './Button'
+import CardSubtitle from './cardSubtitle'
+import Form from './Form'
 
 const ServiceSection = (plugin) => {
     const {title, element1, element2, element3, element4, element5} = plugin;

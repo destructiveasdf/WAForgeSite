@@ -1,5 +1,5 @@
-import CardSubtitle from "./cardSubtitle";
-import Button from "./Button";
+import CardSubtitle from "./cardSubtitle"
+import Button from "./Button"
 const ImageHorizontalCard = (plugin) => {
     const {subTitle, Element1, Element2, Element3, hasButton, image, title, description, extraDescriptionStyles, extraStyle} = plugin;
     var thing;

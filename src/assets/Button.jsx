@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 const Button = (props) => {
     const {isOpenDiv, link, action, text, paddingx, paddingy, extraStyle } = props;

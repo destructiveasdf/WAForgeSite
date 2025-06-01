@@ -1,8 +1,8 @@
-import HeaderLink from "./HeaderObjects/headerLinks";
-import SectionBreak from "./SectionBreak";
-import HeaderLogo from  "./HeaderObjects/headerLogo";
+import HeaderLink from "./HeaderObjects/headerLinks"
+import SectionBreak from "./SectionBreak"
+import HeaderLogo from  "./HeaderObjects/headerLogo"
 import MobileHeaderLogo from "./HeaderObjects/MobileHeaderLogo"
-import { useState } from "react";
+import { useState } from "react"
 
 const MobileHeader = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);

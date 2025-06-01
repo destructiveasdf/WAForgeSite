@@ -1,10 +1,10 @@
-import SecondSubtitle from "./secondSubtitle";
-import Card from "./Card";
-import TextRain from "./textRain";
-import workshop from "../assets/Pictures/workshop.jpg";
-import waiting from "../assets/Pictures/waiting.png";
-import working from "../assets/Pictures/working.png";
-import participants from "../assets/Pictures/Participants.png";
+import SecondSubtitle from "./secondSubtitle"
+import Card from "./Card"
+import TextRain from "./textRain"
+import workshop from "../assets/Pictures/workshop.jpg"
+import waiting from "../assets/Pictures/waiting.png"
+import working from "../assets/Pictures/working.png"
+import participants from "../assets/Pictures/Participants.png"
 
 const PastEventsHackathonSection = () => {
     var opacity = "0.1";
