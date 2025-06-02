@@ -147,6 +147,9 @@ const Home = () => {
                                 <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Content & Communication Manager</p>
                             </div>
                         </div>
+                        <div>
+                            <Button isOpenDiv={false} link="/About" text = "Learn More" paddingx = {" px-[3rem]"} paddingy = " py-[0.7rem]" extraStyle="font-[500]"/>
+                        </div>
                     </div>
                 } />
             </div>} />
