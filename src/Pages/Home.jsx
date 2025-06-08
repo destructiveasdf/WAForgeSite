@@ -50,13 +50,13 @@ const Home = () => {
             <SectionBreak />
 
             <div className='flex flex-col justify-center items-center bg-black pb-20'>
-                <ImageHorizontalCard extraStyle="h-[1400px] w-[90vw] md:h-[1000px] md:w-[1400px]" title="" Element1={
+                <ImageHorizontalCard extraStyle="h-[2200px] w-[90vw] md:h-[1200px] md:w-[1400px]" title="" Element1={
                     <div ref={ref} className='flex flex-col items-center text-center w-full'>
                         <img src={WaforgeStuImpact} alt="WAForge Logo" className="w-[400px] h-[60px] md:w-[675px] md:h-[105px] ml-5"/>
                         <p className="text-gray-400 text-md tracking-widest mb-0 ml-0 font-Poppins tracking-[0.5em] textGlow">INTRODUCING</p>
                         <p className="text-white text-[2em] mb-0 font-Poppins font-[800] md:text-[4em] tracking-[0.2em] textGlow mt-2"></p>
-                        <p className="text-white text-[1.5em] md:text-[3em] mt-0 mb-7 md:mb-16 font-Poppins font-[200] tracking-[0.2em] textGlow">CATALYST</p>
-                        <p className="text-white text-[1em] mb-16 font-Montserrat tracking-[0.3em]">TURNING POTENTIAL INTO PROGRESS</p>
+                        <p className="text-white text-[1.5em] md:text-[3em] mt-0 mb-7 md:mb-5 font-Montserrat font-[400] tracking-[0.2em] textGlow">CATALYST</p>
+                        <p className="text-white text-[1em] mb-16 font-Montserrat tracking-[0.3em] font-[200]">TURNING POTENTIAL INTO PROGRESS</p>
                         
                         <div className="max-w-3xl mx-auto mb-0">
                             <p className="text-gray-300 text-lg font-Montserrat mb-6">
@@ -70,6 +70,16 @@ const Home = () => {
                                 description={<Button link="https://forms.gle/ni8KQCdJobN5q2mo6" text="APPLY" paddingx=" px-[2.5rem]" paddingy=" py-[0.35rem]" extraStyle="mt-[2vh] font-[500]"/>}/>
                             <Card titleSize="20px" title="HAVE QUESTIONS?" extraStyles="font-[600] text-[1.3em]" ExtraDivStyles="!bg-black hover:scale-100"
                                 description={<Button link="mailto:contact@waforge.org" text="CONTACT US" paddingx=" px-[2.5rem]" paddingy=" py-[0.35rem]" extraStyle="mt-[2vh] font-[500]"/>}/>
+                        </div>
+                            <p className="text-white text-[1.5em] mb-4 font-Montserrat tracking-[0.3em] font-[200] mt-7">CURRENT PROJECTS</p>
+                        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+                            <Card titleSize="20px" title="ECOVOYAGE" extraStyles="font-[600] text-[1.3em]" ExtraDivStyles="!bg-black hover:scale-100 md:w-[350px]"
+                               link={"https://eco-voyage-official-ptub.vercel.app/"} description={"An app to compare travel options by emissions, cost, and time for eco-conscious choices."}/>
+                            <Card titleSize="20px" title="BLESSED" extraStyles="font-[600] text-[1.3em]" ExtraDivStyles="!bg-black hover:scale-100 md:w-[350px] md:h-[225px]"
+                               link={"https://blesseddemo.vercel.app/"} description={"Blessed automates growth, posting, and rewards, allowing creators to focus on what they do best"}/>
+                               <Card titleSize="20px" title="JETQUEST" extraStyles="font-[600] text-[1.3em]" ExtraDivStyles="!bg-black hover:scale-100 md:w-[350px] md:h-[225px]"
+                               link={"https://jetquest.vercel.app/"} description={"Explore cities through challenges, earn points, and compete with friends on leaderboards."}/>
+
                         </div>
                     </div>
                 }/>

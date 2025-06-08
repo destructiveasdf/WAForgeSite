@@ -50,7 +50,10 @@ const VideoSection = (props) => {
                     <div className='flex flex-col justify-center items-center'>
                         <img src={logo} className="relative w-[50px] h-[50px] md:w-[75px] md:h-[75px] pulse bottom-4" />
                         <h1 className="z-10 text-white font-Poppins font-[800] tracking-[0.2em] text-[2em] md:text-[4em] mb-[1vh] textGlow">WAFORGE</h1>
-                        <h1 className="z-10 text-white font-Poppins font-[200] tracking-[0.2em] text-[1.5em] mt-3 md:text-[2em] textGlow">Innovate Create Learn</h1>
+                        <p className="text-white font-Montserrat font-[300] text-[0.9em] tracking-[0.15em] font-[100] md:text-[1.2em] max-w-4xl mx-auto mb-4 px-4">WHETHER YOU WANT TO <span className="font-[300] textGlow">LEARN</span> SOMETHING NEW, <span className="font-[300] textGlow">BUILD</span> YOUR NEXT BIG IDEA, OR <span className="font-[300] textGlow">LAUNCH</span> YOUR NEXT PROJECT
+                        </p>
+                        <h1 className="z-10 text-white font-Montserrat font-[800] tracking-[0.25em] text-[0.9em] md:text-[1.2em] mb-[0.2vh] textGlow">IT ALL STARTS HERE</h1>
+
                         {element}
                     </div>
                 )}
