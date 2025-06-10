@@ -50,17 +50,17 @@ const Home = () => {
             <SectionBreak />
 
             <div className='flex flex-col justify-center items-center bg-black pb-20'>
-                <ImageHorizontalCard extraStyle="h-[2200px] w-[90vw] md:h-[1200px] md:w-[1400px]" title="" Element1={
+                <ImageHorizontalCard extraStyle="h-[2600px] w-[90vw] md:h-[1200px] md:w-[1400px] p-5" title="" Element1={
                     <div ref={ref} className='flex flex-col items-center text-center w-full'>
-                        <img src={WaforgeStuImpact} alt="WAForge Logo" className="w-[400px] h-[60px] md:w-[675px] md:h-[105px] ml-5"/>
-                        <p className="text-gray-400 text-md tracking-widest mb-0 ml-0 font-Poppins tracking-[0.5em] textGlow">INTRODUCING</p>
+                        <p className="text-gray-400 font-Montserrat text-lg tracking-widest mb-0 ml-0  tracking-[0.5em] textGlow">INTRODUCING</p>
+                        <img src={Logo} alt="WAForge Logo" className="w-[50px] h-[50px] md:w-[75px] md:h-[75px] pulse mt-10 md:mt-5"/>
                         <p className="text-white text-[2em] mb-0 font-Poppins font-[800] md:text-[4em] tracking-[0.2em] textGlow mt-2"></p>
-                        <p className="text-white text-[1.5em] md:text-[3em] mt-0 mb-7 md:mb-5 font-Montserrat font-[400] tracking-[0.2em] textGlow">CATALYST</p>
-                        <p className="text-white text-[1em] mb-16 font-Montserrat tracking-[0.3em] font-[200]">TURNING POTENTIAL INTO PROGRESS</p>
+                        <p className="text-white font-Montserrat font-[800] tracking-[0.1em] md:tracking-[0.2em] text-[2em] md:text-[4em] mb-2 mt-1 textGlow px-4 md:px-2 mx-auto max-w-[95%] md:max-w-full">CATALYST</p>
+                        <p className="text-white text-[1.05em] md:text-[1.5em] mb-9 font-Montserrat tracking-[0.3em] font-[200] textGlow">TURNING POTENTIAL INTO PROGRESS</p>
                         
                         <div className="max-w-3xl mx-auto mb-0">
-                            <p className="text-gray-300 text-lg font-Montserrat mb-6">
-                                Catalyst is a program to help student developers put their product into the market. WAForge provides <span className="text-[#00dc82]">marketing, financial,</span> and <span className="text-[#00dc82]">development</span> aid to projects that get accepted into this program.
+                            <p className="text-gray-300 font-[200] text-lg font-Montserrat mb-16">
+                                Catalyst is a program to help student developers put their product into the market. WAForge provides <span className="font-[500] biggerTextGlow">marketing, financial,</span> and <span className="font-[500] biggerTextGlow">development</span> aid to projects that get accepted into this program.
                             </p>
                         </div>
                         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
@@ -86,11 +86,11 @@ const Home = () => {
             </div>
             <SectionBreak />
             <div className='flex flex-col justify-center items-center bg-black pb-20'>
-                <ImageHorizontalCard extraStyle="h-[750px] w-[90vw] md:h-[800px] md:w-[1400px]" title="" Element1={
+                <ImageHorizontalCard extraStyle="h-[750px] w-[90vw] p-5 md:h-[800px] md:w-[1400px]" title="" Element1={
                     <div ref={ref} className='flex flex-col items-center text-center w-full pb-20'>
                         <img src={Logo} alt="WAForge Logo" className="w-[50px] h-[50px] md:w-[75px] md:h-[75px] pulse mt-10 md:mt-24"/>
-                        <h1 className="text-white font-Poppins font-[700] tracking-[0.1em] md:tracking-[0.2em] text-[1.6em] md:text-[2.5em] mb-2 mt-2 textGlow px-4 md:px-2 mx-auto max-w-[95%] md:max-w-full">INTERNSHIPS</h1>
-                        <p className="text-white font-Montserrat font-[300] tracking-[0.2em] text-[1em] mb-8 px-2">JOIN OUR MISSION, SUPPORT OUR CAUSE</p>
+                        <h1 className="text-white font-Montserrat font-[800] tracking-[0.1em] md:tracking-[0.1em] text-[2em] md:text-[4em] mb-2 mt-1 textGlow px-4 md:px-2 mx-auto max-w-[95%] md:max-w-full">INTERNSHIPS</h1>
+                        <p className="text-white text-[1.05em] md:text-[1.5em] mb-9 font-Montserrat tracking-[0.3em] font-[200] textGlow">JOIN OUR MISSION, SUPPORT OUR CAUSE</p>
                         <p className="text-white font-Montserrat font-[300] text-[1.2em] max-w-3xl mx-auto mb-8 px-4">
                         Whether you're a developer, designer, leader, or manager WAForge has a place for you! This is an opportunity to gather real-world work experience while gaining volunteer hours!
                         </p>
