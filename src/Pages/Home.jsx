@@ -20,8 +20,9 @@ import Person from '../assets/Pictures/person.jpg'
 import Person1 from '../assets/Pictures/Profiles/ArthurProfile.png'
 import Person2 from '../assets/Pictures/Profiles/SiddarthProfile.png'
 import Person3 from '../assets/Pictures/Profiles/ArnavProfile.png'
-import Person4 from '../assets/Pictures/Profiles/RahulProfile.png'
+import Person4 from '../assets/Pictures/Profiles/RahulProfile.jpg'
 import Person5 from '../assets/Pictures/Profiles/MadhavProfile.png'
+import StuImpactLogo from '../assets/Pictures/stuimpactt (1).png'
 import Footer from  '../assets/Footer'
 import TextRain from '../assets/textRain'
 import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll'
@@ -50,7 +51,7 @@ const Home = () => {
             <SectionBreak />
 
             <div className='flex flex-col justify-center items-center bg-black pb-20'>
-                <ImageHorizontalCard extraStyle="h-[2600px] w-[90vw] md:h-[1200px] md:w-[1400px] p-5" title="" Element1={
+                <ImageHorizontalCard extraStyle="h-[2600px] w-[90vw] md:h-[1350px] md:w-[1400px] p-5" title="" Element1={
                     <div ref={ref} className='flex flex-col items-center text-center w-full'>
                         <p className="text-gray-400 font-Montserrat text-lg tracking-widest mb-0 ml-0  tracking-[0.5em] textGlow">INTRODUCING</p>
                         <img src={Logo} alt="WAForge Logo" className="w-[50px] h-[50px] md:w-[75px] md:h-[75px] pulse mt-10 md:mt-5"/>
@@ -81,6 +82,8 @@ const Home = () => {
                                link={"https://jetquest.vercel.app/"} description={"Explore cities through challenges, earn points, and compete with friends on leaderboards."}/>
 
                         </div>
+                        <p className='text-white text-[0.7em] md:text-[0.7em] mt-[10em] mb-1 font-Montserrat tracking-[0.3em] font-[200] textGlow'>Powered By</p>
+                        <img src={StuImpactLogo} alt="WAForge Catalyst Logo" className='w-[150px] h-[35px] md:w-[150px] md:h-[35px] mb-10'/>
                     </div>
                 }/>
             </div>
@@ -128,15 +131,21 @@ const Home = () => {
                                 <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Co-Founder</p>
                             </div>
                             <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
-                                <img src={Person1} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
-                                <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Arthur Z.</h1>
-                                <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Technology Organizer</p>
+                                <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                                <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Ruhi G.</h1>
+                                <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Co-Founder</p>
                             </div>
+                            
                         </div>
                         <div className='flex flex-col md:flex-row justify-center items-center'>
                             <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
-                                <img src={Person3} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
-                                <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Arnav K.</h1>
+                                <img src={Person1} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                                <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Arthur Z.</h1>
+                                <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Technology Manager</p>
+                            </div>
+                            <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                                <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                                <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Abhay S.</h1>
                                 <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Outreach Manager</p>
                             </div>
                             <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
@@ -144,11 +153,8 @@ const Home = () => {
                                 <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Nitin M.</h1>
                                 <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Marketing Manager</p>
                             </div>
-                            <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
-                                <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
-                                <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Evan G.</h1>
-                                <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Hackathon Manager</p>
-                            </div>
+                            
+                            
                         </div>
                         <div className='flex flex-col md:flex-row justify-center items-center'>
                             <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
