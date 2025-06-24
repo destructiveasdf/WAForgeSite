@@ -31,6 +31,7 @@ import Card from '../assets/Card'
 import Banner from '../assets/Banner'
 import WaforgeCatalyst from '../assets/Pictures/waforgecatalyst.png'
 import WaforgeStuImpact from '../assets/Pictures/WAFORGEwithSTUIMPACT.png'
+import ForgeConLogo from '../assets/Pictures/ForgeCon Logo.png'
 const Home = () => {
     const [count, setCount] = useState(0)
     const ref = useRef(null)
@@ -50,10 +51,43 @@ const Home = () => {
             }/>
             <SectionBreak />
 
+             <div className='flex flex-col justify-center items-center bg-black pb-20'>
+                <ImageHorizontalCard extraStyle="h-[2600px] w-[90vw] md:h-[900px] md:w-[1400px] p-5" title="" Element1={
+                    <div ref={ref} className='flex flex-col items-center text-center w-full'>
+                        <p className="text-gray-400 font-Montserrat text-lg tracking-widest mb-0 ml-0  tracking-[0.5em] textGlow">INTRODUCING</p>
+                        <img src={ForgeConLogo} alt="WAForge Logo" className="w-[50px] h-[50px] md:w-[90px] md:h-[90px] pulse2 mt-10 md:mt-8"/>
+                        <p className="text-white text-[2em] mb-0 font-Poppins font-[800] md:text-[4em] tracking-[0.2em] textGlow"></p>
+                        <p className="text-white font-Montserrat font-[800] tracking-[0.1em] md:tracking-[0.2em] text-[2em] md:text-[4em] mb-2 mt-1 textGlow px-4 md:px-2 mx-auto max-w-[95%] md:max-w-full mt-4">FORGECON</p>
+                        <p className="text-white text-[1.05em] md:text-[1.5em] mb-9 font-Montserrat tracking-[0.3em] font-[200] textGlow">BUILD YOUR FUTURE</p>
+                        
+                        <div className="max-w-3xl mx-auto mb-0">
+                            <p className="text-gray-300 font-[200] text-lg font-Montserrat mb-[6vh]">
+                                ForgeCon is a convention focused on fostering <span className='font-[400] biggerTextGlow'>innovation, entrepreneurship, and career</span> opportunities through a series of events designed to help the next generation <span className='font-[400] biggerTextGlow'>build their future</span>.
+                            </p>
+                        </div>
+                        <p className="text-white text-[1em] md:text-[1.2em] mb-3 font-Montserrat tracking-[0.3em] font-[500] biggerTextGlow">JOIN AN EVENT</p>
+
+
+                        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+                            <Card titleSize="20px" title="CAREERFORGE" extraStyles="font-[600] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100"
+                                description={<p> Washington's largest internship fair. </p>}/>
+                            <Card titleSize="20px" title="VENTUREFORGE" extraStyles="font-[600] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100"
+                                description={<p> Pitch your business plan to VCs and CEOs</p>} paraStyle="mt-6"/>
+                            <Card titleSize="20px" title="HACKFORGE" extraStyles="font-[600] text-[1.27em]" ExtraDivStyles="!bg-black hover:scale-100"
+                                description={<p> Build projects with real impact.</p>}/>
+                        </div>
+                            
+                        <Button link="mailto:contact@waforge.org" text="LEARN MORE" paddingx=" px-[2.5rem]" paddingy=" py-[0.6rem]" extraStyle="mt-[2vh] font-[100] tracking-[0.2em]"/>
+                        
+                    </div>
+                }/>
+            </div>
+
+            <SectionBreak />
+
             <div className='flex flex-col justify-center items-center bg-black pb-20'>
                 <ImageHorizontalCard extraStyle="h-[2600px] w-[90vw] md:h-[1350px] md:w-[1400px] p-5" title="" Element1={
                     <div ref={ref} className='flex flex-col items-center text-center w-full'>
-                        <p className="text-gray-400 font-Montserrat text-lg tracking-widest mb-0 ml-0  tracking-[0.5em] textGlow">INTRODUCING</p>
                         <img src={Logo} alt="WAForge Logo" className="w-[50px] h-[50px] md:w-[75px] md:h-[75px] pulse mt-10 md:mt-5"/>
                         <p className="text-white text-[2em] mb-0 font-Poppins font-[800] md:text-[4em] tracking-[0.2em] textGlow mt-2"></p>
                         <p className="text-white font-Montserrat font-[800] tracking-[0.1em] md:tracking-[0.2em] text-[2em] md:text-[4em] mb-2 mt-1 textGlow px-4 md:px-2 mx-auto max-w-[95%] md:max-w-full">CATALYST</p>
