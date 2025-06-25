@@ -37,7 +37,7 @@ const Home = () => {
             <Header />
             <Banner />
 
-            <VideoSection 
+            {/* <VideoSection 
                 videos={[loopVideo]} 
                 isHero={false} 
                 element={
@@ -46,57 +46,16 @@ const Home = () => {
                     </h1>
                 } 
             />
-            <SectionBreak />
+            <SectionBreak /> */}
 
             <ServiceSection 
                 id="services" 
-                title="ABOUT" 
+                title="WELCOME TO WAFORGE" 
                 element1={
                     <div className="flex flex-col justify-center items-center">
                         <ImageHorizontalCard 
-                            extraStyle="h-[600px] w-[90vw] md:h-[450px] md:w-[1200px]" 
-                            title="MISSION" 
-                            description="Empowering young developers to make meaningful connections, drive innovation, and grow through learning" 
-                            extraDescriptionStyles="text-[1.5em]" 
-                            Element1={
-                                <div className="mt-10">
-                                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.5em] md:text-[2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0">VISION</h1>
-                                    <p className="text-white text-[1.5em] font-[200] font-Montserrat">
-                                        To be the leading platform for young talent across America to connect, collaborate, and develop their skills.
-                                    </p>
-                                </div>
-                            }
-                        />
-                        <ImageHorizontalCard 
-                            title="VALUES" 
-                            extraStyle="h-[600px] w-[90vw] md:h-[350px] md:w-[1200px]" 
-                            Element1={
-                                <div className='flex flex-col md:flex-row justify-center items-center'>
-                                    <div className='w-[90%] md:w-[30%] m-4'>
-                                        <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0">IMPACT</h1>
-                                        <p className="text-white text-[1em] font-[200] font-Montserrat">
-                                            We strive to facilitate change and provide opportunities to those willing to make a difference.
-                                        </p>
-                                    </div>
-                                    <div className='w-[90%] md:w-[30%] m-4'>
-                                        <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0">IDEAS FIRST</h1>
-                                        <p className="text-white text-[1em] font-[200] font-Montserrat">
-                                            We support bold ideas, prioritizing creativity and growth over conventional thinking.
-                                        </p>
-                                    </div>
-                                    <div className='w-[90%] md:w-[30%] m-4'>
-                                        <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0">COMMUNITY</h1>
-                                        <p className="text-white text-[1em] font-[200] font-Montserrat">
-                                            We foster a community of tech enthusiasts dedicated to changing the world.
-                                        </p>
-                                    </div>
-                                </div>
-                            }
-                        />
-
-                        <ImageHorizontalCard 
                             title="ABOUT OUR TEAM" 
-                            extraStyle="w-[90vw] md:w-[1200px] py-8" 
+                            extraStyle="w-[90vw] md:w-[1200px] md:h-[2000px]" 
                             Element1={
                                 <div>
                                     <div className='flex flex-col md:flex-row justify-center items-center'>
@@ -131,7 +90,7 @@ const Home = () => {
                                         <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
                                             <img src={Person1} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]" />
                                             <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]">Arthur Z.</h1>
-                                            <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Technology Organizer</p>
+                                            <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Chief Technology Organizer</p>
                                         </div>
 
                                         <div className="text-left md:w-[60%]">
@@ -199,6 +158,46 @@ const Home = () => {
                                 </div>
                             } 
                         /> 
+                        <ImageHorizontalCard 
+                            extraStyle="h-[600px] w-[90vw] md:h-[450px] md:w-[1200px]" 
+                            title="MISSION" 
+                            description="Empowering young developers to make meaningful connections, drive innovation, and grow through learning" 
+                            extraDescriptionStyles="text-[1.5em]" 
+                            Element1={
+                                <div className="mt-10">
+                                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.5em] md:text-[2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0">VISION</h1>
+                                    <p className="text-white text-[1.5em] font-[200] font-Montserrat">
+                                        To be the leading platform for young talent across America to connect, collaborate, and develop their skills.
+                                    </p>
+                                </div>
+                            }
+                        />
+                        <ImageHorizontalCard 
+                            title="VALUES" 
+                            extraStyle="h-[600px] w-[90vw] md:h-[350px] md:w-[1200px]" 
+                            Element1={
+                                <div className='flex flex-col md:flex-row justify-center items-center'>
+                                    <div className='w-[90%] md:w-[30%] m-4'>
+                                        <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0">IMPACT</h1>
+                                        <p className="text-white text-[1em] font-[200] font-Montserrat">
+                                            We strive to facilitate change and provide opportunities to those willing to make a difference.
+                                        </p>
+                                    </div>
+                                    <div className='w-[90%] md:w-[30%] m-4'>
+                                        <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0">IDEAS FIRST</h1>
+                                        <p className="text-white text-[1em] font-[200] font-Montserrat">
+                                            We support bold ideas, prioritizing creativity and growth over conventional thinking.
+                                        </p>
+                                    </div>
+                                    <div className='w-[90%] md:w-[30%] m-4'>
+                                        <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0">COMMUNITY</h1>
+                                        <p className="text-white text-[1em] font-[200] font-Montserrat">
+                                            We foster a community of tech enthusiasts dedicated to changing the world.
+                                        </p>
+                                    </div>
+                                </div>
+                            }
+                        />
                     </div>
                 } 
             />
