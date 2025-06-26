@@ -14,6 +14,7 @@ import CardSubtitle from '../assets/cardSubtitle'
 import hackathon from '../assets/Pictures/hackathon.png'
 import Button from '../assets/Button'
 import Form from '../assets/Form'
+import ForgeConInterest from '../assets/ForgeConInterest'
 import SocialMedias from '../assets/SocialMedia'
 import Logo from '../assets/Pictures/BiggerLogo.svg'
 import Person from '../assets/Pictures/person.jpg'
@@ -76,9 +77,9 @@ const Home = () => {
                             <Card titleSize="20px" title="HACKFORGE" extraStyles="font-[600] text-[1.27em]" ExtraDivStyles="!bg-black hover:scale-100"
                                 description={<p> Build projects with real impact.</p>}/>
                         </div>
-                            
-                        <Button link="mailto:contact@waforge.org" text="LEARN MORE" paddingx=" px-[2.5rem]" paddingy=" py-[0.6rem]" extraStyle="mt-[2vh] font-[100] tracking-[0.2em]"/>
-                        
+
+                        <ForgeConInterest paddingx="px-10" paddingy="py-2"/>
+
                     </div>
                 }/>
             </div>
