@@ -4,7 +4,11 @@ import Home from './Pages/Home';
 import Header from './assets/Header';
 import { Helmet } from 'react-helmet';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-
+import TagManager from 'react-gtm-module'
+const tagManagerArgs = {
+  gtmId: 'G-FYDBWMS4FB'
+}
+TagManager.initialize(tagManagerArgs)
 
 function App() {
   
