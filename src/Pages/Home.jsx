@@ -109,13 +109,13 @@ const Home = () => {
                         </div>
                             <p className="text-white text-[1.5em] mb-4 font-Montserrat tracking-[0.3em] font-[200] mt-7">CURRENT PROJECTS</p>
                         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-                            <Card titleSize="20px" title="ECOVOYAGE" extraStyles="font-[600] text-[1.3em]" ExtraDivStyles="!bg-black hover:scale-100 md:w-[350px]"
-                               link={"https://eco-voyage-official.vercel.app/"} description={"An app to compare travel options by emissions, cost, and time for eco-conscious choices."}/>
+                            <Card titleSize="20px" title="JETQUEST" extraStyles="font-[600] text-[1.3em]" ExtraDivStyles="!bg-black hover:scale-100 md:w-[350px] md:h-[225px]"
+                               link={"https://jetquest.vercel.app/"} description={"Explore cities through challenges, earn points, and compete with friends on leaderboards."}/>
                             <Card titleSize="20px" title="BLESSED" extraStyles="font-[600] text-[1.3em]" ExtraDivStyles="!bg-black hover:scale-100 md:w-[350px] md:h-[225px]"
                                link={"https://blesseddemo.vercel.app/"} description={"Blessed automates growth, posting, and rewards, allowing creators to focus on what they do best"}/>
-                               <Card titleSize="20px" title="JETQUEST" extraStyles="font-[600] text-[1.3em]" ExtraDivStyles="!bg-black hover:scale-100 md:w-[350px] md:h-[225px]"
-                               link={"https://jetquest.vercel.app/"} description={"Explore cities through challenges, earn points, and compete with friends on leaderboards."}/>
-
+                               
+                            <Card titleSize="20px" title="ECOVOYAGE" extraStyles="font-[600] text-[1.3em]" ExtraDivStyles="!bg-black hover:scale-100 md:w-[350px]"
+                               link={"https://eco-voyage-official.vercel.app/"} description={"An app to compare travel options by emissions, cost, and time for eco-conscious choices."}/>
                         </div>
                         <p className='text-white text-[0.7em] md:text-[0.7em] mt-[10em] mb-1 font-Montserrat tracking-[0.3em] font-[200] textGlow'>Powered By</p>
                         <img src={StuImpactLogo} alt="WAForge Catalyst Logo" className='w-[150px] h-[35px] md:w-[150px] md:h-[35px] mb-10'/>
