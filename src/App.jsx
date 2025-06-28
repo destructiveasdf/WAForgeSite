@@ -1,21 +1,20 @@
-import { useRef, useState } from 'react'
 import React, { useEffect } from 'react';
 import Home from './Pages/Home';
 import Header from './assets/Header';
 import { Helmet } from 'react-helmet';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
-import TagManager from 'react-gtm-module'
-const tagManagerArgs = {
-  gtmId: 'G-FYDBWMS4FB'
-}
-TagManager.initialize(tagManagerArgs)
+import TagManager from 'react-gtm-module';
 
 function App() {
-  
-  return (
-    
-      <>
-        <Helmet>
+    useEffect(() => {
+        const tagManagerArgs = {
+            gtmId: 'G-FYDBWMS4FB'
+        };
+        TagManager.initialize(tagManagerArgs);
+    }, []);
+
+    return (
+        <>
+            <Helmet>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16742883036"></script>
                 <script>
                     {`
@@ -25,15 +24,13 @@ function App() {
                         gtag('config', 'AW-16742883036');
                     `}
                 </script>
-        </Helmet>
+            </Helmet>
 
-        <div className='ContentDiv bg-black'>
-          <Home />
-
-        </div>
-      </>
-    
-  )
+            <div className="ContentDiv bg-black">
+                <Home />
+            </div>
+        </>
+    );
 }
 
 export default App;

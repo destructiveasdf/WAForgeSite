@@ -53,7 +53,7 @@ const Home = () => {
             <SectionBreak />
 
              <div className='flex flex-col justify-center items-center bg-black pb-20'>
-                <ImageHorizontalCard extraStyle="h-[2600px] w-[90vw] md:h-[900px] md:w-[1400px] p-5" title="" Element1={
+                <ImageHorizontalCard extraStyle="h-[1500px] w-[90vw] md:h-[900px] md:w-[1400px] p-5" title="" Element1={
                     <div ref={ref} className='flex flex-col items-center text-center w-full'>
                         <p className="text-gray-400 font-Montserrat text-lg tracking-widest mb-0 ml-0  tracking-[0.5em] textGlow">INTRODUCING</p>
                         <img src={ForgeConLogo} alt="WAForge Logo" className="w-[50px] h-[50px] md:w-[90px] md:h-[90px] pulse2 mt-10 md:mt-8"/>
@@ -78,7 +78,7 @@ const Home = () => {
                                 description={<p> Build projects with real impact.</p>}/>
                         </div>
 
-                        <ForgeConInterest paddingx="px-10" paddingy="py-2"/>
+                        <ForgeConInterest/>
 
                     </div>
                 }/>
@@ -176,7 +176,7 @@ const Home = () => {
                             <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
                                 <img src={Person1} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
                                 <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Arthur Z.</h1>
-                                <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Chief Technology Manager</p>
+                                <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Chief Technology Officer</p>
                             </div>
                             <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
                                 <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>

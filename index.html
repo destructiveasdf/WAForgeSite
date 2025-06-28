@@ -1,64 +1,59 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/Pictures/BiggerLogo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WAForge</title>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','<YOUR GTM ID>');</script>
-    <!-- End Google Tag Manager -->
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<YOUR GTM ID>"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-
-  <!-- <script>
-   document.addEventListener('mousedown', e => {
-    // Create a new element and set its properties
-    const ripple = document.createElement('div');
-    ripple.style.border = '1px solid #ffffff';
-    ripple.style.borderRadius = '50%';
-    ripple.style.position = 'absolute';
-    ripple.style.pointerEvents = 'none';
-    ripple.style.width = '200px';
-    ripple.style.height = '200px';
-    ripple.style.left = (e.pageX - 100) + 'px'; // Subtract half of the ripple's size
-    ripple.style.top = (e.pageY - 100) + 'px'; // Subtract half of the ripple's size
-    ripple.style.transform = 'scale(0)'; // Start the ripple at 0 scale
-    ripple.style.zIndex = '120'
-    // Add the ripple to the body
-    document.body.appendChild(ripple);
-
-    // Animate the ripple
-    ripple.animate([
-        // Keyframes
-        { transform: 'scale(0)', opacity: '1' },
-        { transform: 'scale(0.7)', opacity: '0' }
-    ], {
-        // Timing options
-        duration: 500,
-        easing: 'ease-out'
-    }).onfinish = () => {
-        // Remove the ripple when the animation is done
-        ripple.remove();
-    };
-
-    // Change the cursor color to white
-    cursor.style.backgroundColor = '#ffffff';
-
-
-
-    
-});
-  </script> -->
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="./src/assets/Pictures/BiggerLogo.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WAForge</title>
+        <script>
+            (function(w,d,s,l,i){
+                w[l]=w[l]||[];
+                w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),
+                    dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;
+                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','G-FYDBWMS4FB');
+        </script>
+        <style>
+            .ripple-effect {
+                pointer-events: none;
+                position: absolute;
+                border: 1px solid #ffffff;
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                z-index: 120;
+                transform-origin: center center;
+            }
+        </style>
+    </head>
+    <body>
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=G-FYDBWMS4FB"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+        <!-- <script>
+            document.addEventListener('mousedown', e => {
+                const ripple = document.createElement('div');
+                ripple.classList.add('ripple-effect');
+                ripple.style.left = (e.pageX - 100) + 'px';
+                ripple.style.top = (e.pageY - 100) + 'px';
+                document.body.appendChild(ripple);
+                ripple.animate([
+                    { transform: 'scale(0)', opacity: '1' },
+                    { transform: 'scale(0.7)', opacity: '0' }
+                ], {
+                    duration: 500,
+                    easing: 'ease-out'
+                }).onfinish = () => {
+                    ripple.remove();
+                };
+            });
+        </script> -->
+    </body>
 </html>

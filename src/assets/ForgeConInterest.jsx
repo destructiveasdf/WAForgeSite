@@ -40,7 +40,7 @@ const ForgeConInterest = () => {
                     data-tally-layout="modal"
                     className='relative inline-flex items-center justify-center p-0.5 mt-5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-[12.5px] group bg-gradient-to-br from-[#00dc82] via-[#36e4da] to-[#16a79e] group-hover:from-green-400 duration-[0.1s] hover:shadow-[0_0px_15px_0px_rgba(0,255,130,1)] dark:text-white '
                 >
-                    <span className='tracking-[2px] font-Montserrat font-light relative transition-all ease-in duration-75 bg-white dark:bg-[#18181b] rounded-[9.5px] px-10 py-3'>
+                    <span className='tracking-[2px] font-Montserrat font-light relative transition-all ease-in duration-75 bg-white dark:bg-[#18181b] rounded-[9.5px] px-3 py-3'>
                         INTERESTED?
                     </span>
                 </button>
