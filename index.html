@@ -19,12 +19,14 @@
             }
         </style>
     </head>
-    <noscript>
-            <iframe src="https://www.googletagmanager.com/ns.html?id=G-FYDBWMS4FB"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe>
-        </noscript>
-        <div id="root"></div>
-        <script type="module" src="/src/main.jsx"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYDBWMS4FB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-FYDBWMS4FB');
+    </script>
     <body>
         
         <!-- <script>
