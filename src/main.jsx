@@ -11,6 +11,7 @@ import About from './Pages/About.jsx'
 import Sponsor from './Pages/Sponsor.jsx'
 import PastEvents from './Pages/PastEvents.jsx'
 import Catalyst from './Pages/Catalyst.jsx'
+import ForgeCon from './Pages/ForgeCon.jsx'
 import Internship from './Pages/Internship.jsx'
 
 const router = createBrowserRouter([
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
   {path: "/Sponsor", element: <Sponsor />},
   {path: "/PastEvents", element: <PastEvents />},
   {path: "/Catalyst", element: <Catalyst />},
+  {path: "/ForgeCon", element: <ForgeCon />},
   {path: "/Internship", element: <Internship />}
 
 ]);

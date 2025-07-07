@@ -1,29 +1,51 @@
-import React from 'react';
+import { useEffect } from 'react'
 import styled from 'styled-components';
-
-const ButtonStyle = (plugin) => {
+const ForgeConInterest = (plugin) => {
     const {thing} = plugin;
-  return (
-    <StyledWrapper>
-        <a href={thing} target="_blank" rel="noopener noreferrer">
-      <button className="styled-button ml-0 mr-14 md:ml-30 md:mr-5">
-        Check It Out
-        <div className="inner-button">
-          <svg id="Arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" className="icon">
-            <defs>
-              <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
-                <stop style={{stopColor: '#FFFFFF', stopOpacity: 1}} offset="0%" />
-                <stop style={{stopColor: '#AAAAAA', stopOpacity: 1}} offset="100%" />
-              </linearGradient>
-            </defs>
-            <path fill="url(#iconGradient)" d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z" />
-          </svg>
-        </div>
+    useEffect(() => {
+        const widgetScriptSrc = 'https://tally.so/widgets/embed.js';
+
+        const load = () => {
+            if (typeof Tally !== 'undefined') {
+                Tally.loadEmbeds();
+                return;
+            }
+
+            document
+                .querySelectorAll('iframe[data-tally-src]:not([src])')
+                .forEach((iframeEl) => {
+                    iframeEl.src = iframeEl.dataset.tallySrc;
+                });
+        };
+
+        if (typeof Tally !== 'undefined') {
+            load();
+            return;
+        }
+
+        if (document.querySelector(`script[src="${widgetScriptSrc}"]`) === null) {
+            const script = document.createElement('script');
+            script.src = widgetScriptSrc;
+            script.onload = load;
+            script.onerror = load;
+            document.body.appendChild(script);
+            return;
+        }
+    }, []);
+
+    return (
+        
+        <StyledWrapper>
+        <a target="_blank" rel="noopener noreferrer">
+      <button   data-tally-open="3yA2GB"
+                    data-tally-layout="modal" className="styled-button ml-0 mr-14 h-[60px] md:ml-30 md:mr-5">
+                        
+        {thing}
+        
       </button></a>
     </StyledWrapper>
-  );
-}
-
+    );
+};
 const StyledWrapper = styled.div`
   .styled-button {
     position: relative;
@@ -31,7 +53,7 @@ const StyledWrapper = styled.div`
     font-size: 1.1rem;
     font-weight: bold;
     color: #ffffff;
-    background: linear-gradient(to bottom, #171717, #242424);
+    background: linear-gradient(to bottom,rgba(23, 23, 23, 0.5),rgba(36, 36, 36, 0.5));
     border-radius: 9999px;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
@@ -39,7 +61,7 @@ const StyledWrapper = styled.div`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #292929;
+    border: 1px solidrgba(41, 41, 41, 0.5);
 
     
     margin-top: 20px;
@@ -106,4 +128,5 @@ const StyledWrapper = styled.div`
     transform: rotate(-35deg);
   }`;
 
-export default ButtonStyle;
+
+export default ForgeConInterest;

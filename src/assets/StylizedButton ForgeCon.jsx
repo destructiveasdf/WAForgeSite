@@ -7,7 +7,7 @@ const ButtonStyle = (plugin) => {
     <StyledWrapper>
         <a href={thing} target="_blank" rel="noopener noreferrer">
       <button className="styled-button ml-0 mr-14 md:ml-30 md:mr-5">
-        Check It Out
+        Buy Pass
         <div className="inner-button">
           <svg id="Arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" className="icon">
             <defs>

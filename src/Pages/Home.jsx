@@ -78,7 +78,8 @@ const Home = () => {
                                 description={<p> Build projects with real impact.</p>}/>
                         </div>
 
-                        <ForgeConInterest/>
+                        <Button link="/ForgeCon" text="SIGN UP" paddingx=" px-[3rem]" paddingy=" py-[0.5rem]" extraStyle="mt-[2vh] font-[500] tracking-[0.3em]"/>
+
 
                     </div>
                 }/>
