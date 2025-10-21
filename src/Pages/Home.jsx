@@ -104,7 +104,7 @@ const Home = () => {
                             <Card titleSize="20px" title="INTERESTED?" extraStyles="font-[600] text-[1.3em]" ExtraDivStyles="!bg-black hover:scale-100"
                                 description={<Button link="/Catalyst" text="LEARN MORE" paddingx=" px-[2.5rem]" paddingy=" py-[0.35rem]" extraStyle="mt-[2vh] font-[500]"/>}/>
                             <Card titleSize="20px" title="HAVE A PROJECT?" extraStyles="font-[600] text-[1.3em]" ExtraDivStyles="!bg-black hover:scale-100"
-                                description={<Button link="https://forms.gle/ni8KQCdJobN5q2mo6" text="APPLY" paddingx=" px-[2.5rem]" paddingy=" py-[0.35rem]" extraStyle="mt-[2vh] font-[500]"/>}/>
+                                description={<Button link="https://hcb.hackclub.com/donations/start/waforge?message=Catalyst+Program&goods=true&amount=10000  " text="APPLY" paddingx=" px-[2.5rem]" paddingy=" py-[0.35rem]" extraStyle="mt-[2vh] font-[500]"/>}/>
                             <Card titleSize="20px" title="HAVE QUESTIONS?" extraStyles="font-[600] text-[1.27em]" ExtraDivStyles="!bg-black hover:scale-100"
                                 description={<Button link="mailto:contact@waforge.org" text="CONTACT US" paddingx=" px-[2.5rem]" paddingy=" py-[0.35rem]" extraStyle="mt-[2vh] font-[500]"/>}/>
                         </div>

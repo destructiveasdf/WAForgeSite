@@ -74,7 +74,7 @@ export default function ForgeConPage() {
                             <Card titleSize="20px" title="WHERE" extraStyles="font-[900] text-[1.6em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100"
                                 description={<p className="font-Montserrat text-[1.15em]"> TBA </p>}/>
                             <Card titleSize="20px" title="WHEN" extraStyles="font-[900] text-[1.6em] font-[Montserrat] mb-[2vh]" ExtraDivStyles="!bg-black hover:scale-100"
-                                description={<p className="font-Montserrat text-[1.15em] mt-[1vh]">OCTOBER 2025</p>} paraStyle="mt-6"/>
+                                description={<p className="font-Montserrat text-[1.15em] mt-[1vh]">NOVEMBER 15TH</p>} paraStyle="mt-6"/>
                             <Card titleSize="20px" title="WHY" extraStyles="font-[900] text-[1.6em]" ExtraDivStyles="!bg-black hover:scale-100"
                                 description={<p className="font-Montserrat text-[1.15em]">Build projects with real impact.</p>}/>
                         </div>
@@ -120,12 +120,8 @@ export default function ForgeConPage() {
                            
                         <div className="flex flex-col md:flex-row justify-left items-center gap-3 md:gap-8 ml-0 md:ml-10">
                             
-                            <Card titleSize="20px" title="$10" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-[50vw] md:w-[15vw] m-0 ml-0 mr-0 mt-[4vh] md:mt-0 mb-0"
-                                description={<p className="font-Montserrat text-[1em]"> July 7th - 31st</p>}/>
-                            <Card titleSize="20px" title="$20" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-[50vw] md:w-[15vw] m-0 ml-0 mr-0 mt-0 mb-0 opacity-50"
-                                description={<p className="font-Montserrat text-[1em]"> Aug 1st - 31st </p>}/>
-                            <Card titleSize="20px" title="$25" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-[50vw] md:w-[15vw] m-0 ml-0 mr-0 mt-0 mb-0 opacity-50"
-                                description={<p className="font-Montserrat text-[1em]"> Sept 1st - 30th </p>}/>
+                            <Card titleSize="20px" title="$15" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-[50vw] md:w-[15vw] m-0 ml-0 mr-0 mt-[4vh] md:mt-0 mb-0"
+                                description={<p className="font-Montserrat text-[1em]">Registration</p>}/>
                             
                         </div>
                         </div>
@@ -177,12 +173,8 @@ export default function ForgeConPage() {
                                 The Innovate Pass offers entry into the ForgeCon Internship fair and Hackathon. The internship is the perfect place to gain the opportunities and inspiration to develop your skills as an inventor. The Hackathon is ideal for applying your creative and technical skills to create a new product. Additionally, winners of the hackathon will gain access to WaForge’s catalyst program, designed to bring promising ideas to the market. Through the Innovate pass, one is able to meet likeminded people, apply existing technical skills, and gain inspiration, aiding their journey as an innovator.
                             </p>
                             <div className="flex flex-col md:flex-row justify-end items-end gap-3 md:gap-8 mr-0 md:mr-10 w-full">
-                                <Card titleSize="20px" title="$20" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-full md:w-[15vw] m-0 mr-0 ml-0 mt-[4vh] md:mt-0 mb-0"
-                                    description={<p className="font-Montserrat text-[1em] break-words"> July 7th - 31st</p>}/>
-                                <Card titleSize="20px" title="$30" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-full md:w-[15vw] m-0 mr-0 ml-0 mt-0 mb-0 opacity-50"
-                                    description={<p className="font-Montserrat text-[1em] break-words"> Aug 1st - 31st </p>}/>
-                                <Card titleSize="20px" title="$35" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-full md:w-[15vw] m-0 mr-0 ml-0 mt-0 mb-0 opacity-50"
-                                    description={<p className="font-Montserrat text-[1em] break-words"> Sept 1st - 30th </p>}/>
+                                <Card titleSize="20px" title="$25" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-full md:w-[15vw] m-0 mr-0 ml-0 mt-[4vh] md:mt-0 mb-0"
+                                    description={<p className="font-Montserrat text-[1em] break-words">Registration</p>}/>
                             </div>
                         </div>
                         <div className='flex flex-col md:flex-row display-none justify-center items-center gap-0 mr-10'> 
@@ -214,12 +206,8 @@ export default function ForgeConPage() {
                            
                         <div className="flex flex-col md:flex-row justify-left items-center gap-3 md:gap-8 ml-0 md:ml-10">
                             
-                            <Card titleSize="20px" title="$25" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-[50vw] md:w-[15vw] m-0 ml-0 mr-0 mt-[4vh] md:mt-0 mb-0"
-                                description={<p className="font-Montserrat text-[1em]"> July 7th - 31st</p>}/>
-                            <Card titleSize="20px" title="$35" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-[50vw] md:w-[15vw] m-0 ml-0 mr-0 mt-0 mb-0 opacity-50"
-                                description={<p className="font-Montserrat text-[1em]"> Aug 1st - 31st </p>}/>
-                            <Card titleSize="20px" title="$40" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-[50vw] md:w-[15vw] m-0 ml-0 mr-0 mt-0 mb-0 opacity-50"
-                                description={<p className="font-Montserrat text-[1em]"> Sept 1st - 30th </p>}/>
+                            <Card titleSize="20px" title="$30" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-[50vw] md:w-[15vw] m-0 ml-0 mr-0 mt-[4vh] md:mt-0 mb-0"
+                                description={<p className="font-Montserrat text-[1em]">Registration</p>}/>
                             
                         </div>
                         </div>
@@ -271,12 +259,8 @@ export default function ForgeConPage() {
                                 The Forge Pass is the ultimate package, offering entry into the Internship Fair, Hackathon, and the Venture Forge Competition. This pass is perfect for those looking to develop their skills as a business person, innovator, and professional. Through the Forge Pass, you can make full use of the opportunities presented at Forge Con to build connections, find new career opportunities, and develop technical and creative skills. Through the Forge Pass, you are able to grow holistically and learn from other members of the WaForge community.
                             </p>
                             <div className="flex flex-col md:flex-row justify-end items-end gap-3 md:gap-8 mr-0 md:mr-10 w-full">
-                                <Card titleSize="20px" title="$40" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-full md:w-[15vw] m-0 mr-0 ml-0 mt-[4vh] md:mt-0 mb-0"
-                                    description={<p className="font-Montserrat text-[1em] break-words"> July 7th - 31st</p>}/>
-                                <Card titleSize="20px" title="$50" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-full md:w-[15vw] m-0 mr-0 ml-0 mt-0 mb-0 opacity-50"
-                                    description={<p className="font-Montserrat text-[1em] break-words"> Aug 1st - 31st </p>}/>
-                                <Card titleSize="20px" title="$55" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-full md:w-[15vw] m-0 mr-0 ml-0 mt-0 mb-0 opacity-50"
-                                    description={<p className="font-Montserrat text-[1em] break-words"> Sept 1st - 30th </p>}/>
+                                <Card titleSize="20px" title="$45" extraStyles="font-[900] text-[1.3em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100 w-full md:w-[15vw] m-0 mr-0 ml-0 mt-[4vh] md:mt-0 mb-0"
+                                    description={<p className="font-Montserrat text-[1em] break-words">Registration</p>}/>
                             </div>
                         </div>
                         <div className='flex flex-col md:flex-row display-none justify-center items-center gap-0 mr-10'> 
