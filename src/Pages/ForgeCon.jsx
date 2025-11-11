@@ -72,7 +72,7 @@ export default function ForgeConPage() {
                             <p className="text-white text-[1.05em] md:text-[1.5em] mb-4 font-Montserrat tracking-[0.3em] font-[200] textGlow">REGISTER TODAY</p>
                         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                             <Card titleSize="20px" title="WHERE" extraStyles="font-[900] text-[1.6em] font-[Montserrat]" ExtraDivStyles="!bg-black hover:scale-100"
-                                description={<p className="font-Montserrat text-[1.15em]"> TBA </p>}/>
+                                description={<p className="font-Montserrat text-[1.15em]"> Westlake Center, Seattle, WA </p>}/>
                             <Card titleSize="20px" title="WHEN" extraStyles="font-[900] text-[1.6em] font-[Montserrat] mb-[2vh]" ExtraDivStyles="!bg-black hover:scale-100"
                                 description={<p className="font-Montserrat text-[1.15em] mt-[1vh]">NOVEMBER 15TH</p>} paraStyle="mt-6"/>
                             <Card titleSize="20px" title="WHY" extraStyles="font-[900] text-[1.6em]" ExtraDivStyles="!bg-black hover:scale-100"
